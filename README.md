@@ -14,33 +14,33 @@
 - V-V7-V7
 
 ### Lacrimosa
-- i-i-i
-- III-i/III-i/III
-- ii-ii7b5-ii7b5
-- V-V7-V7
-- i-i-i
-- III-i/III-i/III
-- ii-ii7b5-ii7b5
-- V-V7-V7
+- i-i-i La-a-a
+- III-i/III-i/III A-a-cri-
+- ii-ii7b5-ii7b5 Mo-o-o
+- V-V7-V7 Sa - -
+- i-i-i Di-i-i
+- III-i/III-i/III i-i-es
+- ii-ii7b5-ii7b5 i-i-i
+- V-V7-V7 la - -
 
-### Arise 
-- i (D minor) - - 
-- V7 - - 
-- i - - 
-- VII7 - -
-- III - - (F major) 
-- II7 - -
-- v - - (A minor)
-- IV7 - -
+### Arise (diatonically rising melody in parentheses)
+- i (D minor) - - Qua - - (D)
+- V7 - - Re - - (E)
+- i - - Sur - - (F)
+- VII7 - - Get - - (G)
+- III - - (F major) Ex - - (A)
+- II7 - - Fa - - (B)
+- v - - (A minor) Vi - - (C)
+- IV7 - - Lla - - (D)
 
-### Judgement (C minor)
-- i - -
-- Vdim7/vii - -
-- IV/bvii - -
-- VI7 - -
-- i/V - -
-- bV7 - -
-- IV7 - -
-- bVII - -
+### Judgement (C minor: chromatically rising melody in parentheses)
+- i - - Ju - - (bE)
+- Vdim7/vii - - Di - - (E)
+- IV/bvii - - Can - - (F)
+- VI7 - - Dus - - (#F)
+- i/V - - Ho - - (G)
+- bV7 - - Mo - - (#G)
+- IV7 - - Re - - (A)
+- bVII - - Us - - (A) ... I'd personally make this bB (though it wouldn't sound as sweet)
 
 ### Chorus in D minor (see above)
