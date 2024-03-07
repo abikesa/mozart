@@ -15,7 +15,7 @@
 
 > The introduction sets the stage with its harmonic richness and tension-building progressions. Starting with the tonic minor (i) and moving through a series of modulations and chord transformations (such as III#5/i, III6/i, ii-ii7♭5-iidim7, and V variations with augmented and diminished ninth chords), Mozart crafts an opening that is both haunting and evocative. The use of the III chord with alterations and inversions, alongside the minor iv and dominant V variations, prepares the listener for the emotional depth and complexity of the piece.
 
-### Lacrimosa
+### [Lacrimosa](https://www.youtube.com/watch?v=ISSAkD_IAzc&t=1448s)
 - i-i-i La-a-a
 - III-i/III-i/III A-a-cri-
 - ii-ii7b5-ii7b5 Mo-o-o
