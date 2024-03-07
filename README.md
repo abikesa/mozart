@@ -7,11 +7,18 @@
 
 ### Corrected
 - Intro: i-i/III-ii7b5-V7-i/III-iv-i/V-V7
-- Lacrimosa: i-i/III-ii7b5-V7-i-i/III-ii7b5-V7 (staccato)
-- Re`surg`it: i-V-i-VII-III-II-v-IV (staccato)
+- [Lacrimosa](https://www.youtube.com/watch?v=ISSAkD_IAzc&t=1448s): i-i/III-ii7b5-V7-i-i/III-ii7b5-V7 (staccato)
+- Re`surg`it (rise/surge): i-V-i-VII-III-II-v-IV (staccato)
 - Judicandus (C minor): i-I7/VII-IV/bvii-VI7/VII-V/bvii-VII7-ii/bvii-V `of D minor`
 - Lacrimosa (var 1 in D minor): V/#vii-V-i/V-V-ii7bV/V-V-i/III-V (largo)
-- Re`surg`it (var 1 in D minor; Neapolitan): `bii/IV`- (largo)
+- Re`surg`it: (var 1 in D minor/E-flat major transition; Neapolitan/chromatic "rising"): `bii/IV`-(bV-bv dim7)-i/v-VI-bvii dim7-III/VII-#vii-i (largo)
+- Dona Pacem: i dim7-III/VII-i dim7/bbvii-i dim7/bbvii-i dim7/bbvii-III/VII-#vii-i
+- Pie Jesu: i-VII-VI-i/v-i dim7/bbvii-i dim7/bbvii-III/VII-VII7
+- God/Instrumental (in `F Major`): I-iii-IV-I/V-IV-bv-I/V-V7
+- Requem (in F Major & `D minor`): I-I6-vii7b5-III7-`i-i/III-ii7b5-V`
+- Dona? (D Major!!!!! & `Eb-Maj` & D min): I-I/III-iv-I7-`I-vi-#vi dim7-vii`-i-iv-dim i7/#iv
+- ? (d min & `D Maj`: i/V-i/V-i/V-V-V-`I-I-I`
+- Amen: iv-iv/i-iv-VI-iv-I-I-I
 
 ### Intro
 - i-III#5/i-III6/i
@@ -23,9 +30,11 @@
 - V-i/V-i/V
 - V-V7-V7
 
+# Old (inaccurate) stuff follows
+
 > The introduction sets the stage with its harmonic richness and tension-building progressions. Starting with the tonic minor (i) and moving through a series of modulations and chord transformations (such as III#5/i, III6/i, ii-ii7♭5-iidim7, and V variations with augmented and diminished ninth chords), Mozart crafts an opening that is both haunting and evocative. The use of the III chord with alterations and inversions, alongside the minor iv and dominant V variations, prepares the listener for the emotional depth and complexity of the piece.
 
-### [Lacrimosa](https://www.youtube.com/watch?v=ISSAkD_IAzc&t=1448s)
+### [Lacrimosa]
 - i-i-i La-a-a
 - III-i/III-i/III A-a-cri-
 - ii-ii7b5-ii7b5 Mo-o-o
