@@ -1,7 +1,17 @@
+# Retake
+
 ### Mozart's last testament
 - D minor
 - 12/8 (i.e., pockets of 3)
 - Largetto
+
+### Corrected
+- Intro: i-i/III-ii7b5-V7-i/III-iv-i/V-V7
+- Lacrimosa: i-i/III-ii7b5-V7-i-i/III-ii7b5-V7 (staccato)
+- Re`surg`it: i-V-i-VII-III-II-v-IV (staccato)
+- Judicandus (C minor): i-I7/VII-IV/bvii-VI7/VII-V/bvii-VII7-ii/bvii-V `of D minor`
+- Lacrimosa (var 1 in D minor): V/#vii-V-i/V-V-ii7bV/V-V-i/III-V (largo)
+- Re`surg`it (var 1 in D minor; Neapolitan): `bii/IV`- (largo)
 
 ### Intro
 - i-III#5/i-III6/i
