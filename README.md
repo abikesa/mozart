@@ -80,3 +80,8 @@ In "Lacrimosa," the repetition of the tonic minor chord, the alternation between
 Mozart's use of chromaticism, particularly in the "Judgement" segment, illustrates his unparalleled ability to weave complex harmonic textures that are not only intellectually stimulating but also deeply moving. The proposed modification to conclude on a B♭ adds an additional layer of contemplation, suggesting a resolution that is reflective and nuanced, resonant with the darker shades of the human experience and the profound mysteries of life, death, and what lies beyond.
 
 This judicious blend of musical elements ensures that the "Lacrimosa," and indeed the entire Requiem, stands as a testament to Mozart's genius, offering listeners an immersive experience that is as rich in emotional depth as it is in compositional sophistication. Through this work, Mozart invites us into a contemplation of the eternal, marrying the beauty of his musical language with the profound depths of human experience.
+
+# Storm is over (Pie Jesu Domine)
+- Dark clouds clear (diminished chords in D minor)
+- Give way to bright sun (lead to secondary dominant on C)
+- And faith in our [good shepherd](https://www.youtube.com/watch?v=JE2muDZksP4&t=1s) comforts us (we make it to `F major`!!!!)
