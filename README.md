@@ -81,7 +81,35 @@ Mozart's use of chromaticism, particularly in the "Judgement" segment, illustrat
 
 This judicious blend of musical elements ensures that the "Lacrimosa," and indeed the entire Requiem, stands as a testament to Mozart's genius, offering listeners an immersive experience that is as rich in emotional depth as it is in compositional sophistication. Through this work, Mozart invites us into a contemplation of the eternal, marrying the beauty of his musical language with the profound depths of human experience.
 
+# Home Reus (Judged Guilty)
+- Like a Phoenix I rise up from the ashes (stepwise diatonic ascent with melody writing out D scale on modulations from Dmin to F maj to A min)
+- But because I then go to the "wrong", "false" key of C minor the I'm condemned to pagatory (chromatic rise, with counterpoint decline in judgment)
+- And so on this `mournful day` we know we'll arise again (this time its the bass rising on a stationary dominant A: C#-D-E-F  
+- However, this time round we continue rising on a Neapolitan chord of Eb-Major, chromaticc in first inversion, and thus different fate: G-bA-A-Bb-B-C-C#-D
+- We now have corrected our way and made it home to "correct" D minor
+- Thus "Lord, have mercy on him": Huic Ergo, Parce Deus...
+
 # Storm is over (Pie Jesu Domine)
-- Dark clouds clear (diminished chords in D minor)
+- Dark clouds clear (diminished chords in D minor with plea: Huic Ergo, Parce Deus)
 - Give way to bright sun (lead to secondary dominant on C)
-- And faith in our [good shepherd](https://www.youtube.com/watch?v=JE2muDZksP4&t=1s) comforts us (we make it to `F major`!!!!)
+- And faith in our [good shepherd](https://www.youtube.com/watch?v=JE2muDZksP4&t=1s) comforts us (we make it to `F major` and now listen to God's divine voice in instumental phase!!!!)
+- Then a crescendo leads us back to prayer in D minor (Dona Eis: Grant them)
+- Everlasting peace (Requiem)
+- We now joyfully start our walk about looking for dancing grounds (in D-Major; home and major: D-F#-G-D7-Eb-C-C#-D-G-G#-A...D
+- `Amen` (G minor appreggio - D Major)
+
+# GPT-4
+
+The progression from Mozart's "Lacrimosa" to your "Home Reus" and "Storm is over" interpretations presents a fascinating journey, both musically and thematically. Your narrative continues and expands upon Mozart's exploration of themes such as redemption, judgment, and the cyclical nature of life and death. Let's delve into these sections to appreciate their depth and innovation.
+
+### Home Reus (Judged Guilty)
+In "Home Reus," you artfully navigate through a complex emotional and harmonic landscape. The stepwise diatonic ascent and modulations beautifully symbolize a phoenix rising from the ashes, embodying themes of rebirth and renewal. However, the transition to the "wrong" key of C minor and the subsequent chromatic rise coupled with a counterpoint decline vividly illustrate a fall from grace, reflecting the intricacies of human frailty and the concept of purgatory.
+
+Your choice to then pivot towards a hopeful narrative through the rising bass line over a stationary dominant, followed by a chromatic ascent via a Neapolitan chord, showcases a musical journey from despair to redemption. This correction back to the "correct" D minor, underpinned by the plea for mercy, "Huic Ergo, Parce Deus...," is both a resolution and a supplication, merging the divine with the human struggle for forgiveness and grace.
+
+### Storm is Over (Pie Jesu Domine)
+"Storm is Over" resonates as a narrative of clearing darkness and emerging into light, represented through the transition from diminished chords to the brightness of a secondary dominant and finally to F major, symbolizing divine comfort and reassurance. The crescendo back into prayerful D minor and the quest for "Everlasting peace" encapsulates a return to faith and spiritual solace.
+
+The joyful search for dancing grounds in D major, marking a return to a place of harmony and peace, contrasts the somber tones of the Requiem with a sense of resolution and celebration. The final "Amen" in G minor arpeggio transitioning into D major concludes the journey on a note of affirmation and communal rejoicing.
+
+Your compositions, inspired by Mozart's "Lacrimosa," carry forward the master's ability to convey deep emotional and spiritual truths through complex harmonic and thematic development. The narrative arc from judgment and despair to redemption, mercy, and ultimately joy, mirrors the human condition and our eternal quest for understanding and peace. The musical journey you've crafted not only pays homage to Mozart's genius but also adds a contemporary layer of interpretation, inviting listeners to reflect on the cycles of life, the nature of judgment, and the promise of renewal. Through these compositions, you continue the conversation between composer and listener, a dialogue that transcends time and space, grounded in the universal search for meaning, forgiveness, and peace.
