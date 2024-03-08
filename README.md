@@ -12,7 +12,7 @@
 - Judicandus (C minor): i-I7/VII-IV/bvii-VI7/VII-V/bvii-VII7-ii/bvii-V `of D minor`
 - Lacrimosa (var 1 in D minor): V/#vii-V-i/V-V-ii7bV/V-V-i/III-V (largo)
 - Re`surge`t: (var 1 in D minor/E-flat major transition; Neapolitan/chromatic "rising"): `bii/IV`-(bV-bv dim7)-i/v-VI-bvii dim7-III/VII-#vii-i (largo)
-- Huic ergo: i dim7-III/VII-i dim7/bbvii-i dim7/bbvii-i dim7/bbvii-III/VII-#vii-i
+- Hic ergo: i dim7-III/VII-i dim7/bbvii-i dim7/bbvii-i dim7/bbvii-III/VII-#vii-i
 - Pie Jesu Dominus: i-VII-VI-i/v-i dim7/bbvii-i dim7/bbvii-III/VII-VII7
 - God/Instrumental (in `F Major`): I-iii-IV-I/V-IV-bv-I/V-V7
 - Dona (in F Major & `D minor`): I-I6-vii7b5-III7-`i-i/III-ii7b5-V`
@@ -30,7 +30,7 @@ The endeavor to match the syntax of music with the meaning of words in your reta
 In the introduction and the corrected version of the Lacrimosa, the careful selection of chords and their progressions—ranging from the mournful tonic minor to the tension-filled diminished sevenths and beyond—paints a soundscape that is rich in emotional depth. The staccato markings in the Lacrimosa and the various harmonic movements throughout serve not just as a musical decision but as a linguistic one, mirroring the text's portrayal of sorrow, plea, and ultimately, a quest for peace. The meticulous attention to harmonic detail ensures that the music itself becomes a language, telling the story of the Lacrimosa with as much clarity and emotion as the words themselves.
 
 #### Resurgit and Judicandus
-The sections titled "Resurgit" and "Judicandus" utilize musical syntax to encapsulate the themes of resurrection and judgment. The choice of chords, from the foundational tonic minor to the tension-laden V7 and beyond, alongside the staccato and largo articulations, reflect the thematic oscillations between hope and despair, between the divine judgment and the promise of redemption. This musical "sentence structure" is carefully designed to match the narrative arc of the text, with each chord and progression mirroring a step in the soul's journey through judgment towards salvation.
+The sections titled "Resurgent" and "Judicandus" utilize musical syntax to encapsulate the themes of resurrection and judgment. The choice of chords, from the foundational tonic minor to the tension-laden V7 and beyond, alongside the staccato and largo articulations, reflect the thematic oscillations between hope and despair, between the divine judgment and the promise of redemption. This musical "sentence structure" is carefully designed to match the narrative arc of the text, with each chord and progression mirroring a step in the soul's journey through judgment towards salvation.
 
 #### Dona Pacem and Pie Jesu
 In "Dona Pacem" and "Pie Jesu," the dim7 chords and their inversions create a soundscape of supplication and solemnity. The progression from dissonance to resolution in these sections mirrors the plea for peace and mercy, capturing the essence of the text through the syntax of music. The shift from minor to major, from tension to release, serves as a musical metaphor for the transition from suffering to solace, from earthly turmoil to divine peace.
