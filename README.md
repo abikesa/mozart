@@ -15,6 +15,7 @@
 6. Expression
    - Withdraw (skill-`challenge`-mismatch) x voir
       - Bach had a "didactic" mission
+         - Chirghur in "No country for old men" also feels like that mission is to "channel" nature to you in form of the ludicrous challenge of a coin toss 
       - Of course along with other missions 
    - Engage (flow-`growth`-victory) x emotion
       - All levels of hierarchy
