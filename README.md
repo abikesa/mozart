@@ -10,6 +10,6 @@
 3. Diatonic
    - 11th, 13th
 4. Chromatic
-   - [17th](https://www.youtube.com/watch?v=EYLk1kXDI_s), 19th
+   - 17th, [19th](https://www.youtube.com/watch?v=EYLk1kXDI_s) 
 5. Temperament
 6. Expression
