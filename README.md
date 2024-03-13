@@ -13,3 +13,8 @@
    - 17th, [19th](https://www.youtube.com/watch?v=EYLk1kXDI_s) 
 5. Temperament
 6. Expression
+   - Withdraw (skill-challenge-mismatch)
+   - Engage (flow-`growth`-victory)
+      - All levels of hierarchy
+         - You can see his [growth](https://www.youtube.com/watch?v=EYLk1kXDI_s) as a composer from adding more emotion rather than just the difficulty of the pieces. Stunning!  
+   - Impose (hideth, whineth, tameth)
