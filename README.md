@@ -1,24 +1,146 @@
-                        1. Root
-                               \
-              2. Pentatonic -> 4. Chromatic -> 5. Temperament -> 6. Expression
-                               /
-                               3. Diatonic
+<a href="https://book.the-turing-way.org/welcome.html"><img src="https://static.dw.com/image/62054308_1004.webp" width="500" align="Right" /></a>
 
-1. Root
-2. Pentatonic
-   - 1st, 3rd, 5th, 7th, 9th
-3. Diatonic
-   - 11th, 13th
-4. Chromatic
-   - 17th, [19th](https://www.youtube.com/watch?v=EYLk1kXDI_s) 
-5. Temperament
-6. Expression
-   - Withdraw (skill-`challenge`-mismatch) x voir
-      - Bach had a "didactic" mission
-         - Chirghur in "No country for old men" also feels like that mission is to "channel" nature to you in form of the ludicrous challenge of a coin toss 
-      - Of course along with other missions 
-   - Engage (flow-`growth`-victory) x emotion
-      - All levels of hierarchy
-         - You can see his [growth](https://www.youtube.com/watch?v=EYLk1kXDI_s) as a composer from adding more emotion rather than just the `difficulty` of the pieces. Stunning!
-            - Clearly he is no "didact"   
-   - Impose (hideth, whineth, tameth) x worthy...
+```sh
+find local -type f -exec du -h {} + | sort -rh | head -n 10
+```
+
+```sh
+      1. Probabilistic
+                      \
+  2. Neuronetworks -> 4. Central -> 5. Algorithms -> Deterministic
+                      /
+                      3. Graphical
+```
+
+### Linear: Dionysus 1, 2, 3
+### Categorical: Sing O Muse 4
+### Binary: Apollo 5, 6
+
+# _Oscar Wilde_
+
+```sh
+Rhythm
+├── local
+│   ├── 1-chaos
+│   ├── 1-pessimism.cff
+│   ├── 2-bge.md
+│   ├── 2-frenzy
+│   ├── 3-energy
+│   ├── 3.robustness.md
+│   ├── 4-dionysian
+│   ├── 4-dionysus.md
+│   ├── 5-algorithm
+│   ├── 5-science.md
+│   ├── 6-binary
+│   ├── 6-morality.md
+│   ├── README.md
+│   ├── _chords.md
+│   ├── _modes.md
+│   ├── frontier.png
+│   ├── kitabo
+│   │   ├── Makefile
+│   │   ├── README.md
+│   │   ├── ensi
+│   │   │   ├── LICENSE.md
+│   │   │   ├── _bibliography
+│   │   │   ├── _build
+│   │   │   ├── _config.yml
+│   │   │   ├── _static
+│   │   │   ├── _toc.yml
+│   │   │   ├── afterword
+│   │   │   ├── analytics
+│   │   │   ├── bach.pdf
+│   │   │   ├── collaboration
+│   │   │   ├── communication
+│   │   │   ├── community-handbook
+│   │   │   ├── ethical-research
+│   │   │   ├── figures
+│   │   │   ├── foreword
+│   │   │   │   ├── README.md
+│   │   │   │   ├── _chords.md
+│   │   │   │   ├── _modes.md
+│   │   │   │   ├── amazing.md
+│   │   │   │   ├── app
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── assets
+│   │   │   │   │   ├── css
+│   │   │   │   │   └── risk.html
+│   │   │   │   ├── background.md
+│   │   │   │   ├── bounce.md
+│   │   │   │   ├── cite.md
+│   │   │   │   ├── community.md
+│   │   │   │   ├── critical.md
+│   │   │   │   ├── drills.md
+│   │   │   │   ├── embracing-digital-commons.md
+│   │   │   │   ├── emergent-strategy.md
+│   │   │   │   ├── engagement.md
+│   │   │   │   ├── faqs.md
+│   │   │   │   ├── foreword.md
+│   │   │   │   ├── frontier.png
+│   │   │   │   ├── funk.md
+│   │   │   │   ├── genre.md
+│   │   │   │   ├── governance.md
+│   │   │   │   ├── history.md
+│   │   │   │   ├── index.md
+│   │   │   │   ├── inference.md
+│   │   │   │   ├── jsbach.md
+│   │   │   │   ├── kenny.md
+│   │   │   │   ├── literature.md
+│   │   │   │   ├── mcr.md
+│   │   │   │   ├── modes.md
+│   │   │   │   ├── navigate.md
+│   │   │   │   ├── nietzsche.md
+│   │   │   │   ├── oldreadme.md
+│   │   │   │   ├── purple.md
+│   │   │   │   ├── qualities.md
+│   │   │   │   ├── readme2.md
+│   │   │   │   ├── recentreadme.md
+│   │   │   │   ├── reverence.md
+│   │   │   │   ├── sample.md
+│   │   │   │   ├── tokens.md
+│   │   │   │   ├── universal.md
+│   │   │   │   ├── voicing.md
+│   │   │   │   ├── wicked.md
+│   │   │   │   ├── xpected.md
+│   │   │   │   └── yourstruly.md
+│   │   │   ├── foreword.md
+│   │   │   ├── handel.pdf
+│   │   │   ├── index.md
+│   │   │   ├── mozart.pdf
+│   │   │   ├── profiles.yml
+│   │   │   ├── project-design
+│   │   │   ├── reproducible-research
+│   │   │   ├── requirements.in
+│   │   │   ├── requirements.txt
+│   │   │   ├── runtime.txt
+│   │   │   └── scripts
+│   │   ├── templates
+│   │   │   ├── (contents of templates)
+│   ├── lychee.toml
+│   ├── netlify.toml
+├── myenv
+│   ├── (contents of myenv)
+└── new
+    ├── (contents of new)
+```
+
+## [Mozart at 200](https://abikesa.github.io/haydn/part1/part1.html)
+
+```sh
+
+         1. Aria
+                \
+2. Leitmotif -> 4. Chords-> 5. Rhythm -> 6. Fugue 
+                /
+                3. Melody
+
+
+
+      1. Probablity
+                   \
+2. Neuronetowrk -> 4. Error -> 5. Categorical -> 6. Deterministic
+                   / 
+                   3. Log-linear
+```
+
+> *Mozart did not know the world of classical antiquity but he knew a great deal of music, from old church composers to Bach and Handel, from Salzburg serenade to Italian opera. `All this he embraced because he could control it`*
