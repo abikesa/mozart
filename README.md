@@ -1,3 +1,5 @@
+> *We are all `riffing` of the same [melody](https://www.instagram.com/reel/C7lvO2lSnEk/?utm_source=ig_web_copy_link) - Jensen Huang*
+
 <a href="https://book.the-turing-way.org/welcome.html"><img src="https://static.dw.com/image/62054308_1004.webp" width="500" align="Right" /></a>
 
 ```sh
