@@ -1,5 +1,13 @@
 # MCR
 
+```sh
+              1. Pagan
+                      \
+  2. Joir de vivre -> 4. Oratorio -> 5. Asceticism -> Christian
+                      /
+                      3. Opera
+```
+
 Mozart placed a premium on `melody`, crafting pieces where the beauty and clarity of the melodic line are paramount. His genius lies in how effortlessly his melodies soar, supported by sophisticated yet accessible harmonic structures.
 
 Bach's brilliance is in his intricate `polyphony`. The way he weaves multiple independent melodic lines together is nothing short of miraculous. Each line maintains its own integrity while contributing to a complex and harmonious whole. This kind of musical conversation, with elements like counterpoint and fugue, showcases a deep, almost mathematical understanding of harmony and structure.
@@ -143,7 +151,7 @@ Rhythm
 
          1. Aria
                 \
-2. Leitmotif -> 4. Chords-> 5. Rhythm -> 6. Fugue 
+2. Leitmotif -> 4. Polyphony -> 5. Rhythm -> 6. Fugue 
                 /
                 3. Melody
 
@@ -151,7 +159,7 @@ Rhythm
 
       1. Prognostic
                    \
-2. Neuronetowrk -> 4. Error -> 5. Categorical -> 6. Diagnostic
+2. Neuronetowrk -> 4. Error-Mystery-Laughter-Terror -> 5. Categorical -> 6. Diagnostic
                    / 
                    3. Log-linear
 ```
