@@ -1,3 +1,14 @@
+# MCR
+
+Mozart placed a premium on `melody`, crafting pieces where the beauty and clarity of the melodic line are paramount. His genius lies in how effortlessly his melodies soar, supported by sophisticated yet accessible harmonic structures.
+
+Bach's brilliance is in his intricate `polyphony`. The way he weaves multiple independent melodic lines together is nothing short of miraculous. Each line maintains its own integrity while contributing to a complex and harmonious whole. This kind of musical conversation, with elements like counterpoint and fugue, showcases a deep, almost mathematical understanding of harmony and structure.
+
+Handel, on the other hand, does focus on `rhythm` and drama, which is evident in his operas and oratorios. His music often relies on bold, clear gestures and rhythmic drive to convey emotional depth and grandeur. This rhythmic emphasis can indeed achieve a potent impact with fewer elements, drawing listeners into the dramatic essence of his compositions.
+
+---
+
+
 > *We are all `riffing` off the same [melody](https://www.instagram.com/reel/C7lvO2lSnEk/?utm_source=ig_web_copy_link) - Jensen Huang*
 
 <a href="https://book.the-turing-way.org/welcome.html"><img src="https://static.dw.com/image/62054308_1004.webp" width="500" align="Right" /></a>
