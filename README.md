@@ -138,9 +138,9 @@ Rhythm
 
 
 
-      1. Probablity
+      1. Prognostic
                    \
-2. Neuronetowrk -> 4. Error -> 5. Categorical -> 6. Deterministic
+2. Neuronetowrk -> 4. Error -> 5. Categorical -> 6. Diagnostic
                    / 
                    3. Log-linear
 ```
