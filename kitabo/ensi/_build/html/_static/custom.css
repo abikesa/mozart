@@ -1,0 +1,53 @@
+/* Move search bar to the top right corner */
+.search-bar {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 1000;
+}
+
+/* Adjust navbar elements to ensure proper alignment */
+.navbar-header .navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar-header .navbar-right > * {
+  margin-left: 1rem;
+}
+
+/* Ensure other elements in the navbar are not affected */
+.navbar-nav {
+  margin-right: 1rem;
+}
+
+.cite {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.citation {
+  vertical-align: super;
+  font-size: 0.8em;
+}
+
+<style>
+.video-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Video container styling */
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Adds space between the iframes */
+  justify-content: space-between;
+}
+
+.video-container iframe {
+  flex: 1 1 calc(50% - 1rem); /* Adjusts width to fit two videos side by side with a gap */
+  height: 300px; /* Adjust the height as needed */
+  border: none;
+}
