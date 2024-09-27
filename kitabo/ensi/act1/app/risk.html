@@ -35,35 +35,43 @@
         }
         canvas {
             width: 100% !important;
-            height: 400px !important; /* Fixed height */
+            height: 400px !important;
+        }
+        #variable-options {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
     <h1>Mortality Risk Calculator</h1>
     
+    <!-- Voice Input Section -->
     <div class="input-method">
         <h2>Option 1: Voice Input</h2>
         <button id="start-dictation">Start Dictation</button>
         <div id="dictation-result"></div>
     </div>
 
+    <!-- Manual Variable Selection Section -->
     <div class="input-method">
-        <h2>Option 2: Manual Selection</h2>
-        <label for="scenario-dropdown">Select Scenario:</label>
-        <select id="scenario-dropdown">
-            <option value="donor">Donor</option>
-            <option value="control">Control</option>
-            <option value="genpop">General Population</option>
-        </select>
+        <h2>Option 2: Select Variables</h2>
+        <div id="variable-options"></div>
     </div>
 
+    <!-- Button to Calculate Risk -->
     <button id="calculate-risk-button" disabled>Calculate Mortality Risk</button>
 
+    <!-- Graph Container -->
     <div id="mortality-risk-graph-container">
         <canvas id="mortality-risk-graph"></canvas>
     </div>
 
+    <!-- Results Section -->
+    <!-- div id="mortality-risk-results" --></div>
+
+    <!-- Ensure the path is correct -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/script.js"></script>
 </body>

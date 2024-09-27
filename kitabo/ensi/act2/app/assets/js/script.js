@@ -19,13 +19,16 @@ async function fetchCSV(url) {
 async function loadData() {
     try {
         // Fetch coefficients
-        const coefficientsData = await fetchCSV('https://abikesa.github.io/flow/_downloads/b57ad99810799d0be5a9e18f54115561/b.csv');
+        // const coefficientsData = await fetchCSV('https://abikesa.github.io/flow/_downloads/b57ad99810799d0be5a9e18f54115561/b.csv');
+        const coefficientsData = await fetchCSV('../../data/b.csv');
         const [header, ...rows] = coefficientsData;
         beta = rows[0].split(',').map(Number);
         console.log('Coefficients loaded:', beta);
 
         // Fetch survival data
-        const survivalData = await fetchCSV('https://abikesa.github.io/flow/_downloads/9c26f2afd014707dc60aefc8facbf60d/s0.csv');
+        
+        // const survivalData = await fetchCSV('https://abikesa.github.io/flow/_downloads/9c26f2afd014707dc60aefc8facbf60d/s0.csv');
+        const survivalData = await fetchCSV('../../data/s0.csv');
         const [survivalHeader, ...survivalRows] = survivalData;
         timePoints = [];
         s0 = [];

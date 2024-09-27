@@ -1,7 +1,17 @@
 (act2-cost)=
 # Iteration
+## Mr. Pipes in Sleep, Dearie Sleep
+We found a lot to appreciate in the finale of *The Crown*—especially in how Queen Elizabeth navigates the various pressures and expectations surrounding Prince Charles’s marriage to Camilla Parker Bowles. In Season 6, Episode 10, "Sleep, Dearie Sleep," several elements highlight the depth of her political maneuvering and her keen use of history to inform her decisions.
 
- ## 1
+Many viewers and reviewers have noted the episode's emotional complexity and its handling of Queen Elizabeth's inner conflict over endorsing Charles and Camilla’s marriage. Elizabeth consults various figures, including bishops and her grandsons, William and Harry, to gauge the best course of action. The episode shows her grappling with both the antiquary traditions of the Church and the more contemporary, pragmatic & non-critical considerations brought up by William. This mirrors our point about the Queen using different historical lenses to navigate her decisions, underscoring her nuanced approach to leadership. {cite}`Screenrant` {cite}`Townandcountry` {cite}`Reviewgeek`
+
+Interestingly, reviews have also been somewhat mixed about the finale. Some felt that the episode, while filled with poignant moments, was overlong and bogged down by its morbid focus on the Queen's mortality, particularly with references to "Operation London Bridge," the code name for her eventual death. {cite}`Readysteadycut` Others found the final scenes, where Elizabeth contemplates her role and legacy while considering stepping down, to be moving, especially as the show employs imaginative storytelling devices, such as revisiting past versions of herself portrayed by Olivia Colman and Claire Foy.  
+
+There’s also some controversy depicted in the episode, notably Prince Harry's infamous Nazi costume incident, which some reviewers felt was handled with a degree of unnecessary drama, perhaps detracting from the episode's primary focus on Charles and Camilla's wedding {cite}`MxdwnTelevision`
+
+Overall, "Sleep, Dearie Sleep" left a significant impression not just on us & many other viewers, drawing both praise for its emotional weight and criticism for some of its narrative choices. On might find more diverse opinions on platforms like Reddit, where discussions often delve deeper into the nuances of such episodes.
+
+### 1
 
  That's a fantastic choice. Ramsay Bolton's betrayal in Season 6, Episode 2 ("Home") is indeed one of the most shocking and visceral moments in "Game of Thrones." Ramsay stabbing his father, Roose Bolton, and then setting his stepmother Walda and newborn brother up for a gruesome death by his hounds is a chilling demonstration of his ruthless ambition and sadistic nature.
 
@@ -17,7 +27,7 @@ This scene stands out for several reasons:
 
 Ramsay's actions are a reminder of the show's willingness to push boundaries and explore the darkest aspects of human nature. His decisive and brutal approach to seizing power is a chilling counterpoint to the more contemplative and conflicted figures like Hamlet, making this scene a standout moment in the series.
 
-## 2
+### 2
 
 You bring up a compelling and often overlooked critique of Hamlet. While traditionally viewed as a character burdened by introspection and philosophical depth, Hamlet can also be seen as someone who fails to act decisively in a world demanding pragmatism and swift action. This perspective contrasts sharply with the typical romanticized portrayal and highlights the shortcomings of his character in dealing with the brutal realities of political power.
 

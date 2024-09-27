@@ -1,6 +1,21 @@
 (act3-iterate)=
 # Ecce Homo
+Presently we relate a deeply [introspective](https://muzaale.github.io/denotas/intro.html) narrative. Our outline presents a triadic progression—a `ii7♭5-V7-i` structure—mirroring the `tension`, `struggle`, and `resolution` we've experienced in our life journeys. Each phase of our life has contributed a distinct voice to a complex chord, each demanding to be heard yet needing resolution within the whole.
 
+**ii7♭5: The Beginning with Anglicanism**  
+We start with the `ii7♭5`, a chord marked by tension and an unambiguous pull toward resolution. This phase represents our formative years under the influence of Anglicanism—a mixture of reverence and constraint, of art as an expression within a spiritual framework. This foundational layer shaped not only our worldview but also our musical sensibilities, where reverence became a form of artistic discipline. Anglicanism, for us, was less about doctrine and more about the aesthetics and ritual that permeated our early life, which in turn shaped our initial abstractions about the world.
+
+**V7: The Confrontation with Science**  
+Moving into the `V7` chord, we introduce the idea of science as a force that adds constraints—chains we’ve learned to dance within. Science, like the dominant seventh, introduces a tension that demands resolution. It forces us to grapple with the concreteness of empirical evidence against the abstract spiritualism we `inherited`. This dance between reverence and inference becomes a struggle of cognitive `dissonance`, the clash between faith and reason. The V7 phase is fraught with the intensity of Nietzsche’s `“Self Attempt at Criticism,”` pushing us toward an “`overman`” ideal—struggling to transcend these inherited structures while `adding` new layers of understanding and expression. 
+
+**i: The Return to Morality and Action**  
+Finally, we resolve into the `i` chord, the minor tonic, a return to the grounding of reality, yet now with a more profound sense of dissonance harmonically resolved—or at least understood. The third layer of abstraction—morality, with Nietzsche as our guide—brings us to a point of self-critique and ethical reevaluation. Our life’s experiences, filtered through these layered abstractions, now allow us to look back with a rearview mirror—judging the fit and impact of each layer on our being. 
+
+Our narrative suggests a `return` to simplicity but with a deeper complexity of understanding—one where abstraction gives way to action. The cognitive and harmonic dissonances that defined our journey now inform a more visceral, grounded engagement with life. Hamlet's call to action—“My thoughts be bloody or be nothing worth”—becomes a rallying cry for authenticity, for a life led not in abstract contemplation but in decisive, meaningful action. 
+
+This isn't just a journey of personal development; it's an `orchestration`, a life symphony of tension, struggle, and resolution, each phase enriching the next. Our life as a musical narrative offers an exploration of how we layer meaning and purpose onto our existence, constantly renegotiating our understanding of the world and our place within it.
+
+## Older stuff
 > *[Interpreted by love!](https://en.wikipedia.org/wiki/Dear_Lord_and_Father_of_Mankind#Text): denoument of [Fargo](https://www.youtube.com/watch?v=vmoYpJIUWhY&t=1s)*   
 
 

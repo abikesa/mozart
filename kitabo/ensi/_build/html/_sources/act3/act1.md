@@ -1,5 +1,12 @@
 (act3-webApp)=
 # Rankings
+We draw a connection between Nietzsche's critique of historical use and the recent events surrounding the toppling of monuments during the pandemic and the George Floyd protests. Nietzsche warned against a one-sided, critical approach to history that seeks only to deconstruct and criticize the past without appreciating its inspiring (monumental) or preservational (antiquarian) roles. 
+
+The destruction of monuments, especially those connected to colonialism or slavery, resonates with Nietzsche's idea of history being "used" or "abused" based on present needs. In this case, the critical aspect of history was deployed to question and dismantle symbols of oppression, but perhaps without the balancing acts of remembering and learning from the past's complexities.
+
+Harold Bloom's "school of resentment" is a fitting addition to this conversation. Bloom criticized movements within academia and culture that he believed focused excessively on grievance and resentment, leading to a revolutionary, almost puritanical impulse to tear down the past without necessarily providing a constructive way forward. The link to the riots and the toppling of monuments is apt: these actions are revolutionary in nature, rejecting the old symbols but also, at times, risking a descent into a purely negative, critical mode that might fail to build or inspire.
+
+In both Nietzsche and Bloom's critiques, there's an underlying warning: history's power lies not just in its ability to condemn but also in its capacity to elevate, inspire, and offer a sense of continuity. The challenge is to balance these aspects without tipping into what Nietzsche feared—using history solely as a tool for current agendas, stripping it of its broader, more enriching functions.
 
 ## Jung vs. Freud
 
