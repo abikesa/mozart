@@ -2,6 +2,13 @@
 # Review
 
 ## Donation-Attributable Risk
+Our use of "Phonetics/Experience: Sound, Latent/Abstraction: Fury, NexToken/Meaning: Nothing" is a riff on Faulkner's *The Sound and the Fury*. We're layering literary themes with computational linguistics or maybe even music theory.
+
+"Phonetics/Experience: Sound" aligns with the raw sensory input, the direct experience of sound as it hits the ear—a pure, unfiltered state. This might correspond to the immediacy of human experience, much like how Benjy experiences the world in Faulkner's novel.
+
+"Latent/Abstraction: Fury" introduces the idea of internal processing—where raw data (sound) is transformed into something more abstract (fury). It's the complex, often chaotic internalization of external stimuli, reminiscent of Quentin's tumultuous internal monologues.
+
+"NexToken/Meaning: Nothing" is a nod to the absence of meaning or the elusive search for it. In a computational sense, the "next token" is predictive, but when linked with "nothing," it suggests a void—a prediction leading to an absence. This is almost like Jason's nihilistic outlook or the despair that pervades the Compson family's narrative arc.
 
 <iframe src="../pdfs/locke.pdf" width="200%" height="600px" style="borders:none"></iframe>
 

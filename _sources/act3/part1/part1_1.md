@@ -1,6 +1,31 @@
 (webApp-html)=
-# 3.1
+# Artistic Constraints
 
+Our exploration of artistic constraints includes the roles of composer, performer, and audience across different musical traditions. Let's delve into each of these constraints further, considering the nuances you’ve outlined and how they shape musical expression.
+
+### 1. **Composer's Constraints**
+In classical music, the composer wields significant control over the piece's structure and emotional content. The constraints are often strict: time signatures, key signatures, harmonic progressions, dynamics, and even tempo markings can all be meticulously prescribed. The historical context of the composer plays a crucial role here. A composer like Bach or Mozart, rooted in the Baroque or Classical traditions, left little room for `ambiguity`, emphasizing strict adherence to form and theory. Their works, often reflecting the cultural and artistic norms of their time, become almost untouchable `relics` in which deviation is seen as a departure from the '`sacred` text.'
+
+Yet, even within these constraints, there’s room for interpretation. The very precision with which composers like Beethoven or Mahler indicated tempo and dynamics suggests an awareness of the potential for variation. But their specificity also imposes a discipline on performers: it's a bit like reading a script where every word and gesture is predefined, but the actor's delivery can still bring unique nuances. Think of `Glenn Gould's` distinct approach to Bach—his interpretations are both deeply faithful to the notes on the page and uniquely his own, almost re-composing the music through performance.
+
+### 2. **Performer’s Constraints and Freedoms**
+In jazz, the performer’s role is dramatically different. Jazz is like a “divine inheritance.” The melody—or perhaps better put, the lead sheet—serves as a skeleton from which the performer improvises, embellishes, and invents. Here, the performer is not just interpreting but actively composing in real-time. The constraints are softer, defined more by the rules of the `genre` (like the use of blue notes, swing rhythms, or certain harmonic vocabularies) than by a strict adherence to a composer’s intentions.
+
+Jazz musicians often talk about '`freedom` within form' (not unlike Nietzsche's freedom within fetters). {cite}`nietzsche1911freedom` There’s the freedom to deviate from the set melody or harmony, but there's also a respect for the form—whether it's a 12-bar blues, a 32-bar standard, or a modal exploration. Miles Davis’s *Kind of Blue* is a perfect example: the modes provided a harmonic foundation, but the performers were free to explore within those bounds. The constraint here is more about the tradition, the history, and the expectations of jazz as a `living` art form, rather than a rigid script.
+
+### 3. **Audience’s Expectations and Constraints**
+The audience's expectations also vary significantly between classical music and jazz. In a classical concert, the audience typically expects a faithful rendition of the composed piece. The experience is often contemplative, almost `reverential`. The setting—a concert hall, a cathedral—adds to this sense of formality. The constraint for performers is not just in the music itself but in how the music is 'supposed' to be presented.
+
+In jazz, the audience `expects the unexpected`. They come not just to hear a piece performed but to witness creation in the moment, to experience that ‘magic of communication’ between musicians. The setting—a `smoky club`, a lively bar, even a street corner—reflects this `dynamism`. The constraint here is more about maintaining the spontaneity and immediacy of the performance rather than adhering to a fixed form. 
+
+The idea of constraints shaping creativity is rich with implications. In a way, constraints provide a framework within which innovation can happen. The rigor of classical music forces performers to find new emotional depths within a fixed structure, while the looseness of jazz encourages a different kind of creativity—one that's more about dialogue and discovery.
+
+### **Comparative Insight**
+The differences in constraints also highlight deeper philosophical differences between genres. Classical music often mirrors a worldview that values highly curated apollonian `order, structure, and hierarchy`. It’s about finding beauty within the rules. Jazz, on the other hand, is more anarchic, reflecting a worldview that values frenzied dionysian `individuality, expression, and communal dialogue` as in real life. {cite}`nietzsche_attempt_2003` It’s about finding beauty by bending or breaking the rules, for nature knows not any.
+
+Our framework of constraints—composer, performer, audience—offers a lens through which to view not just music but all forms of artistic expression. It’s a reminder that every art form, while bound by its own set of rules and expectations, also contains infinite potential for reinvention and reinterpretation. Constraints, rather than being mere limitations, become the very conditions that make creativity possible.
+
+## Older Stuff
 > Published since September 1843 to take part in _“a severe contest between intelligence, which presses forward, and an unworthy, timid ignorance obstructing our progress.”_
 
                         1. World News
@@ -24,7 +49,13 @@
                           3. Artifacts-Rituals 
 ```
 
-> _Fig. 1 Tribes decode heritage in unique ways._ But the artists from these different heritages also might emerge with very different ways to encode what their ancestors have seen, remembered, and felt. Some with levity, others with gravity.
+```{figure} ../figures/blanche.*
+---
+width: 1
+height: 1
+---
+_Tribes decode heritage in unique ways._ But the artists from these different heritages also might emerge with very different ways to encode what their ancestors have seen, remembered, and felt. Some with levity, others with gravity.
+```
 
 
 ### Parametrize 1, 2, 3
@@ -99,7 +130,13 @@ Choosing between re-weighting and re-parametrizing depends on the specific chall
                            3. Mean
 ```
 
-> _Fig. 2 [Black Christian Women](https://www.thedailybeast.com/obsessed/divorce-in-the-black-review-tyler-perrys-worst-movie-yet)._ Tyler Perry is a fascinating case study. Despite constant critical dismissal, he’s one of the most successful filmmakers in America, consistently working with mid-range budgets but managing to gross more than $1 billion. His fan base is one Hollywood routinely ignores—chiefly Black, Christian women—and Perry makes his films with his proud Christian values at the forefront. 
+```{figure} ../figures/blanche.*
+---
+width: 1
+height: 1
+---
+_[Black Christian Women](https://www.thedailybeast.com/obsessed/divorce-in-the-black-review-tyler-perrys-worst-movie-yet)._ Tyler Perry is a fascinating case study. Despite constant critical dismissal, he’s one of the most successful filmmakers in America, consistently working with mid-range budgets but managing to gross more than $1 billion. His fan base is one Hollywood routinely ignores—chiefly Black, Christian women—and Perry makes his films with his proud Christian values at the forefront. Tyler Perry uses history as source material for `deliverance`, what is hoped-for by those who have suffered in kind of torture he has selected from the past. What critics lament is that Tyler Perry's success provides a reinforcing approach that completely lacks the need for `reverence`, piety, `inference` or "interpreting history by love". He uses christianity and its redemptive message, but also has very pornographic content in other works, which are inconsistent with Christian morality. He didn't attend art school and doesn't seem to hold any forebears with any reverence, since he'd done good pretty well without their help. And so antiquary, the monumental, and critical are not equally used by him. He's mostly critical, and very selectively so. He is an abuser of history. {cite}`nietzsche_thoughts_2024`
+```
 
 You've raised an excellent point. When generating a predictive equation for specific case scenarios, the focus indeed shifts from population-level inference to individual predictions. Here's why re-weighting might be less suitable in this context and why re-parametrization or other model adjustments might be more appropriate:
 
@@ -141,8 +178,14 @@ Re-weighting is a valuable technique for addressing sampling biases and ensuring
                                       3. Gut-Robustness
 ```
 
-> _Fig. 3 [Optimism firmly rooted within `Good & Evil`](https://www.thedailybeast.com/obsessed/divorce-in-the-black-review-tyler-perrys-worst-movie-yet)._ Space for nuance is desperately needed. That’s never been Perry’s specialty—his most egregious movie, Temptations: Confessions of a Marriage Counselor, punished its main character with HIV for having an affair. But Divorce in the Black is practically crying out for it. Dallas is a thinly sketched cartoon villain, a constantly raised voice that spits venom. Ava, meanwhile, is a benevolent angel transported directly from heaven itself. Perry’s script never allows an opportunity for its characters to be anything but symbols of good and evil, and that’s all Ava and Dallas end up being. Perry’s moral code is frustratingly rigid: If someone does bad things, they must be a bad person. There’s no room for negotiation or nuance. It’s not only holier-than-thou—it’s also boring writing. 
 
+```{figure} ../figures/blanche.*
+---
+width: 1
+height: 1
+---
+_[Optimism firmly rooted within `Good & Evil`](https://www.thedailybeast.com/obsessed/divorce-in-the-black-review-tyler-perrys-worst-movie-yet)._ Space for nuance is desperately needed. That’s never been Perry’s specialty—his most egregious movie, Temptations: Confessions of a Marriage Counselor, punished its main character with HIV for having an affair. But Divorce in the Black is practically crying out for it. Dallas is a thinly sketched cartoon villain, a constantly raised voice that spits venom. Ava, meanwhile, is a benevolent angel transported directly from heaven itself. Perry’s script never allows an opportunity for its characters to be anything but symbols of good and evil, and that’s all Ava and Dallas end up being. Perry’s moral code is frustratingly rigid: If someone does bad things, they must be a bad person. There’s no room for negotiation or nuance. It’s not only holier-than-thou—it’s also boring writing. 
+```
 
 The Coen Brothers have a distinctive style that attracts a diverse and dedicated fan base. However, certain demographic trends can be discerned within their audience. Here's a speculative profile:
 

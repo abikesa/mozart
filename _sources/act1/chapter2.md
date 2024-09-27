@@ -1,11 +1,18 @@
 (act1-esrd)=
 # ESRD
+## Refining inferences
+Please note the importance of “curate, interpret, encode” in modern discourse. This phrase is a powerful triad that beautifully captures the essence of what art accomplishes. This sequence encapsulates the artistic `process` and underscores art’s role in laying the foundation for scientific inquiry and moral reasoning. 
+
+"Curate, interpret, encode" — a concise mantra that captures the transformative journey from raw experience to meaningful understanding, guiding both art and science in their pursuits.
+
+Let's unambiguously linke this mantra to the three uses & abuses of history: reverence, knowledge, & deliverance. And to the qualities of the artistic process: inheritence, addition, & overcoming. We'll later articulate these from perspectives of antiquary, monumentary, and critical.
 
 ```{margin}
    ```{note}
 *In Bach, God threw us a bone to chew on, we few, we happy few! {cite}`shakespeare_st_crispins_day_speech`*
 ```
 
+## Other notes
 The phrase "throw a bone to chew on" typically means giving someone something to occupy their attention or to think about. It's often used metaphorically, derived from the literal action of giving a dog a bone to keep it busy and satisfied. This phrase can be used in various contexts:
 
 1. **Distraction or appeasement**: In politics or negotiations, it might mean offering a small concession or minor issue to distract from the more significant matters at hand. For example, a politician might announce a minor policy change to appease the public while avoiding more substantial reforms.
