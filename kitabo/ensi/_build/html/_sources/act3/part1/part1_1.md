@@ -79,6 +79,8 @@ In short, you’re describing Wilder as composing a film much like a piece of mu
 
 ## Annie Hall  
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JduADWt0XMI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 | **Element**                      | **The Seven Year Itch** (1955)                                                                  | **Annie Hall** (1977)                                                                 |
 |-----------------------------------|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
