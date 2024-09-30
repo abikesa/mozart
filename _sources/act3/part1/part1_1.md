@@ -110,6 +110,8 @@ In short, you’re describing Wilder as composing a film much like a piece of mu
 
 **Fantasy and Iconography**: Both films deal with Marilyn Monroe as an iconic figure of fantasy. Wilder uses her directly as the object of Richard's fantasies in *The Seven Year Itch*, while Allen plays with the same imagery in *Annie Hall*, where young Alvy imagines Monroe in the famous white dress. Allen’s use of this iconography not only pays homage to *The Seven Year Itch* but also comments on how cultural fantasies shape individual desire.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1VIBA_mPdPA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 **Humor Style**: While both films use humor to explore male desire and relationships, *The Seven Year Itch* relies more on physical comedy and situational irony, while *Annie Hall* delves into intellectual and psychological humor. Wilder plays with comedic misdirection (e.g., the plumber instead of Monroe), while Allen uses self-deprecating humor and verbal wit, often tied to Alvy’s neurotic introspection.
 
 **Fourth-Wall Breaking**: The biggest difference between the films is Allen’s consistent breaking of the fourth wall. He uses it as a narrative device to bring the audience into Alvy’s psyche, whereas Wilder restricts fourth-wall breaking to Richard’s fantasies, maintaining a clearer divide between fantasy and reality.
