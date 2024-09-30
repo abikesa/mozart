@@ -22,7 +22,7 @@ Reversing Dante's *Divine Comedy* is bold and evocative. It’s almost tantamoun
 
 The cherubs in *The School of Athens* represent pure, divine knowledge, which Raphael staged almost as if whispering to the philosophers below. Maybe they're watching you, the audience, as you unpack the grand narratives of life to find your own path in this earthly mess. The cherubs, almost `smug` in their higher perspective, poking fun at the intellectual heavyweights below. Their attitude—like “Why aren’t you all as blissful as us?”—perfectly flips the solemnity of the painting into something more `playful`, with an undercurrent of irony. 
 
-But of course the cherubs know everyone is eventually going to hit that wall of "contemplating shit"—adds a darker edge. It’s like they’re saying, "Enjoy it while you can, but we know what’s coming for you." It’s pastoral-comical-tragical, to borrow from [Polonius](https://www.gutenberg.org/files/1524/1524-h/1524-h.htm).
+But of course the cherubs know everyone is eventually going to hit that wall of "contemplating shit"—adds a darker edge. It’s like they’re saying, "Enjoy it while you can, but we know what’s coming for you." It’s historical-pastoral-comical-tragical, to borrow from [Polonius](https://www.gutenberg.org/files/1524/1524-h/1524-h.htm).
 
 ## Adults
 ### 1. **Central Figures: Plato and Aristotle**
