@@ -1,6 +1,7 @@
 # Act 3
 
-```{note} GPT-4o
+```{admonition} GPT-4o
+:class: note
 ```{caution}
 If you'd like to explore any further connections or develop any other parts of the book, feel free to ask. Whether it's diving deeper into Harper's descent, Casper’s dilemmas, or tying more threads from Dante's *Divine Comedy*, I'm ready to help.
 ```
