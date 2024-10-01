@@ -1,0 +1,679 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>CLTX &#8212; Mozart</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/book-stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'review/cltx/cltx';</script>
+    <script src="../../_static/script.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Mozart - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Mozart - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act1/part1.html">Part 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter1.html">Mortality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter2.html">ESRD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter3.html">Frailty</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act2/part2.html">Part 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter1.html">Hospitalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter2.html">Length of Stay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter3.html">Outcomes</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act3/part3.html">Part 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../act3/act1.html">WebApp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../act3/part1/part1_1.html">Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../act3/part1/part1_2.html">User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../act3/part1/part1_3.html">Annotation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../act3/act2.html">Deployment</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../act3/part2/part2_1.html">GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../act3/part2/part2_2.html">Collaborative</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../act3/part2/part2_3.html">Open-Source</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../act3/act3.html">Iteration</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../act3/part3/part3_1.html">Latest Research</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../act3/part3/part3_2.html">Bayesian Updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../act3/part3/part3_3.html">Missingness and A Priori</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/abikesa/template/main?urlpath=tree/book/website/review/cltx/cltx.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/review/cltx/cltx.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>CLTX</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#latent-profiles-of-deceased-organ-donation-registrants-and-non-registrants-in-the-united-states">Latent profiles of deceased organ donation registrants and non-registrants in the United States</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#editors">Editors</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#authors">Authors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chatgpt-solving-complex-kidney-transplant-cases-a-comparative-study-with-human-respondents">ChatGPT Solving Complex Kidney Transplant Cases: A Comparative Study with Human Respondents</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Editors</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Authors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="cltx">
+<span id="id1"></span><h1>CLTX<a class="headerlink" href="#cltx" title="Permalink to this heading">#</a></h1>
+<section id="id2">
+<h2>1<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<section id="latent-profiles-of-deceased-organ-donation-registrants-and-non-registrants-in-the-united-states">
+<h3>Latent profiles of deceased organ donation registrants and non-registrants in the United States<a class="headerlink" href="#latent-profiles-of-deceased-organ-donation-registrants-and-non-registrants-in-the-united-states" title="Permalink to this heading">#</a></h3>
+<section id="editors">
+<h4>Editors<a class="headerlink" href="#editors" title="Permalink to this heading">#</a></h4>
+<p>Machine learning has a guaranteed place in the future of clinical medicine.</p>
+<p>But for now, these authors have failed to offer a compelling place for it in this specific instance.</p>
+<p>A simple logistic regression of all the factors they studied on “registration for organ donation” would help ground their work using methods that are familiar and transparent us. The predictive accuracy of the traditional and transparent vs. “unsupervised” and opaque would be the simplest way to motivate their innovation.</p>
+<p>That said, the paper is NOT written in the style a clinical audience expects and deserves. Nothing short of complete redesign of this effort would make this paper appropriate for the journal.</p>
+</section>
+<section id="authors">
+<h4>Authors<a class="headerlink" href="#authors" title="Permalink to this heading">#</a></h4>
+<p>“Latent profiles of deceased organ donation registrants and non-registrations in the United States” is an innovative paper that seeks to identify factors associated with registration for deceased organ donation.</p>
+<p>It uses unsupervised machine learning to uncover three profiles of persons from National Behavioral Health Survey (N=11,083) that have some “meaningful” differences linked to registration as a donor. The differences identified include  access to healthcare services, satisfaction with those services, mental health, and age (but not as a standalone variable).</p>
+<p>But several issues make this effort unlikely to benefit readers of the journal. First, the methods are not familiar to the audience and lack the transparency the allows one to be critical.</p>
+<p>Second, the style of reporting isn’t for a clinical audience that is familiar with a traditional Table 1 with descriptive characteristics using familiar metrics like median (Interquartile range) or mean (SD) for continuous variables.</p>
+<p>Figure 1 includes metrics that are not familiar or clinically useful (e.g. standard deviations from grand means for healthcare access).</p>
+<p>Table 2. Presents the output (i.e., the latent profiles) and describes them in terms of gender, race, state incentive for living donation, possession of drivers license, and medical insurance status. Without a meaningful conceptualization of the organ donation process (deceased donation vs. living donation), this model will be problematic to readers.</p>
+<p>Furthermore, traditionally used methods such as logistic regression should first be explored so that we  have a benchmark against which to appraise unfamiliar and opaque machine-learning approaches.</p>
+<p>Table 3 presents another table that isn’t suitable for a clinical audience, with columns for chi-square statistics, across too many groups for the mind to grapple with. Critically, the p-values emerging from these multiple comparisons are not as meaningful as the authors let off.</p>
+<p>The supplemental material is completely inaccessible to the clinician.</p>
+</section>
+</section>
+</section>
+<section id="id3">
+<h2>2<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<section id="chatgpt-solving-complex-kidney-transplant-cases-a-comparative-study-with-human-respondents">
+<span id="chatgpt"></span><h3>ChatGPT Solving Complex Kidney Transplant Cases: A Comparative Study with Human Respondents<a class="headerlink" href="#chatgpt-solving-complex-kidney-transplant-cases-a-comparative-study-with-human-respondents" title="Permalink to this heading">#</a></h3>
+<section id="id4">
+<h4>Editors<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h4>
+<div class="cell tag_hide-input tag_hide-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Clock settings; f(t) random disturbances making &quot;paradise lost&quot;</span>
+<span class="n">clock_face_radius</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">number_of_ticks</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">tick_labels</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Vision&quot;</span><span class="p">,</span> <span class="s2">&quot;Auditory&quot;</span><span class="p">,</span> <span class="s2">&quot;Chemistry&quot;</span><span class="p">,</span> <span class="s2">&quot;Language&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Barometry&quot;</span><span class="p">,</span> <span class="s2">&quot;Pain&quot;</span><span class="p">,</span> <span class="s2">&quot;Temperature&quot;</span><span class="p">,</span> <span class="s2">&quot;Gravity&quot;</span>
+<span class="p">]</span>
+
+<span class="c1"># Calculate the angles for each tick (in radians)</span>
+<span class="n">angles</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">number_of_ticks</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="c1"># Inverting the order to make it counterclockwise</span>
+<span class="n">angles</span> <span class="o">=</span> <span class="n">angles</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># Create figure and axis</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+
+<span class="c1"># Draw the clock face</span>
+<span class="n">clock_face</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Circle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">clock_face_radius</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;lightgrey&#39;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">clock_face</span><span class="p">)</span>
+
+<span class="c1"># Draw the ticks and labels</span>
+<span class="k">for</span> <span class="n">angle</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">angles</span><span class="p">,</span> <span class="n">tick_labels</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">clock_face_radius</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">clock_face_radius</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+    
+    <span class="c1"># Draw the tick</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">x</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+    
+    <span class="c1"># Positioning the labels slightly outside the clock face</span>
+    <span class="n">label_x</span> <span class="o">=</span> <span class="mf">1.1</span> <span class="o">*</span> <span class="n">clock_face_radius</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+    <span class="n">label_y</span> <span class="o">=</span> <span class="mf">1.1</span> <span class="o">*</span> <span class="n">clock_face_radius</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+    
+    <span class="c1"># Adjusting label alignment based on its position</span>
+    <span class="n">ha</span> <span class="o">=</span> <span class="s1">&#39;center&#39;</span>
+    <span class="n">va</span> <span class="o">=</span> <span class="s1">&#39;center&#39;</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">ha</span> <span class="o">=</span> <span class="s1">&#39;left&#39;</span>
+    <span class="k">elif</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">ha</span> <span class="o">=</span> <span class="s1">&#39;right&#39;</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">va</span> <span class="o">=</span> <span class="s1">&#39;bottom&#39;</span>
+    <span class="k">elif</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">va</span> <span class="o">=</span> <span class="s1">&#39;top&#39;</span>
+    
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">label_x</span><span class="p">,</span> <span class="n">label_y</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="n">ha</span><span class="p">,</span> <span class="n">verticalalignment</span><span class="o">=</span><span class="n">va</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># Remove axes</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+
+<span class="c1"># Show the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<img alt="../../_images/972f81c9f9f499567f96dc314ff0b48a12f226ac67e9dba77f3f77ac40a6491d.png" src="../../_images/972f81c9f9f499567f96dc314ff0b48a12f226ac67e9dba77f3f77ac40a6491d.png" />
+</div>
+</details>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>               1. f(t)
+                     \
+          2. S(t) -&gt; 4. y:h&#39;(t)=0;t(X&#39;X).X&#39;Y -&gt; 5. b -&gt; 6. SV&#39;
+                     /
+                     3. h(t)
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(t)\)</span> Each mode has its own data properties and pdf</p></li>
+<li><p><span class="math notranslate nohighlight">\(S(t)\)</span> Cumulative inputs (i.e., greater data, more modes) is where the edge is</p></li>
+<li><p><span class="math notranslate nohighlight">\(ht(t)\)</span> Quicker processesing of a lot of information</p></li>
+<li><p><span class="math notranslate nohighlight">\((X'X)^T \cdot X'Y\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta\)</span> Diagnosis as a single word is a tidy token that GPTs were trained to predict</p></li>
+<li><p><span class="math notranslate nohighlight">\(SV'\)</span> But “attention” to the context of the key words yields an <code class="docutils literal notranslate"><span class="pre">unexamined</span></code> edge <span id="id5"><sup><a class="reference internal" href="../../act3/part3/part3_3.html#id57" title="Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Lukasz Kaiser, and Illia Polosukhin. Attention is all you need. In Proceedings of the 31st International Conference on Neural Information Processing Systems, volume 30, 6000–6010. Curran Associates Inc., 2017.">12</a></sup></span></p></li>
+</ul>
+<p>This is a very simple and clearly written analysis of a topical issue. I think its worth publishing, after the authors address the concerns the reviewer raised, as well as the issues I’ve presented.</p>
+</section>
+<section id="id6">
+<h4>Authors<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h4>
+<p><img alt="" src="https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20240803_STD002.jpg" /></p>
+<figure class="align-default" id="id13">
+<a class="reference internal image-reference" href="review/cltx/figures/blanche.png"><img alt="review/cltx/figures/blanche.png" src="review/cltx/figures/blanche.png" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>AI Mugshot</em>. to avoid seeming biased towards one-specific industry product, can the authors comment on other chatbots on the market including <a class="reference external" href="http://claude.ai">claude.ai</a>, <a class="reference external" href="http://meta.ai">meta.ai</a>, <a class="reference external" href="http://perplexity.ai">perplexity.ai</a>, gemini, etc?.<span id="id7"><sup><a class="reference internal" href="../../act3/part3/part3_3.html#id80" title="OpenAI. Chatgpt. https://chatgpt.com, 2024. Accessed: 2024-07-26.">57</a></sup></span> <span id="id8"><sup><a class="reference internal" href="../../act3/part3/part3_3.html#id81" title="Microsoft. Github copilot. https://copilot.microsoft.com, 2024. Accessed: 2024-07-26.">58</a></sup></span> <span id="id9"><sup><a class="reference internal" href="../../act3/part3/part3_3.html#id82" title="Anthropic. Claude ai. https://claude.ai, 2024. Accessed: 2024-07-26.">59</a></sup></span> <span id="id10"><sup><a class="reference internal" href="../../act3/part3/part3_3.html#id83" title="Meta AI. Meta ai. https://www.meta.ai, 2024. Accessed: 2024-07-26.">60</a></sup></span> <span id="id11"><sup><a class="reference internal" href="../../act3/part3/part3_3.html#id84" title="Perplexity AI. Perplexity ai. https://www.perplexity.ai, 2024. Accessed: 2024-07-26.">61</a></sup></span></span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The authors assessed the accuracy of different versions of ChatGPT (3.5, 4, and 4V) in responding to kidney transplant cases from historical quizzes of the American Society of Nephrology (2015, 2014, 2013). There were two cases for each year, a case summary, lab results, an image (e.g. head CT), and multiple choice answers: for instance, which of the following is the most likely cause of her chest pain and CXR findings? [A] Lung cancer, [B] Recurrent breast cancer, [C] Pneumonia, [D] Sarcoidosis.</p>
+<p>Performance was benchmarked to nephrology fellows, transplant program directors, and an audience. Figure 1 offers a very powerful &amp; accessible summary of the findings. GPT-4V almost matched the transplant program directors overall performance across the three years studied.</p>
+<p>But visual inspection reveals heterogeneity in the hierarchies across the years (e.g. the fellows outperformed GPT-4V in the 2013 quiz but fell short in the other years). Are the differences in performance witnessed over just a handful of quesionnaire items statistically significant? Are they clinically meaningful?</p>
+<p>Can you comment on multimodal chatbots that are widely available right now. GPT-4o, for instance, is more recent than GPT-4V and can process not only images, but also audio, video, uploaded .PDF or .CSV files, extending utility beyond text and static images. Much more detailed clinical detail can be processed by these newer versions of chatbots by “reading” the entire patient record on file in a matter of seconds or minutes, including all available images, and perhaps even audio records from the physicians. Isn’t this study design under-selling the potential edge these chatbots may actually have? And if these approaches are limited by HIPAA, then can the authors address these issues in the revised discussion?<span id="id12"><sup><a class="reference internal" href="../../act3/part3/part3_3.html#id51" title="Editorial. Gpt, claude, llama: how to tell which ai model is best. The Economist, 2024. URL: https://www.economist.com/science-and-technology/2024/07/31/gpt-claude-llama-how-to-tell-which-ai-model-is-best.">62</a></sup></span></p>
+<p>Second, to avoid seeming biased towards one-specific industry product, can the authors comment on other chatbots on the market including <a class="reference external" href="http://claude.ai">claude.ai</a>, <a class="reference external" href="http://meta.ai">meta.ai</a>, <a class="reference external" href="http://perplexity.ai">perplexity.ai</a>, gemini, etc? How would the authors advise a clinician to approach these options? ChatGPT has been an industry leader, but this is a very dynamic and fast-growing area of competition and it would be helpful to place ChatGPT in the broader context</p>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./review/cltx"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#latent-profiles-of-deceased-organ-donation-registrants-and-non-registrants-in-the-united-states">Latent profiles of deceased organ donation registrants and non-registrants in the United States</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#editors">Editors</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#authors">Authors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chatgpt-solving-complex-kidney-transplant-cases-a-comparative-study-with-human-respondents">ChatGPT Solving Complex Kidney Transplant Cases: A Comparative Study with Human Respondents</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Editors</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Authors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © 2025 ADM
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

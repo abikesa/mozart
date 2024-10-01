@@ -1,0 +1,613 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Part 2 &#8212; Mozart</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/book-stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'act2/part2';</script>
+    <script src="../_static/script.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 1" href="chapter1.html" />
+    <link rel="prev" title="Chapter 3" href="../act1/chapter3.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Mozart - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Mozart - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act1/part1.html">Part 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter1.html">Mortality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter2.html">ESRD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter3.html">Frailty</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Part 2</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter1.html">Hospitalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html">Length of Stay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">Outcomes</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act3/part3.html">Part 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act1.html">WebApp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_1.html">Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_2.html">User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_3.html">Annotation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act2.html">Deployment</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_1.html">GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_2.html">Collaborative</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_3.html">Open-Source</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act3.html">Iteration</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_1.html">Latest Research</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_2.html">Bayesian Updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_3.html">Missingness and A Priori</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/abikesa/template/main?urlpath=tree/book/website/act2/part2.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/act2/part2.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Part 2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#th-wall">4th Wall</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attention-is-all-you-need">Attention is All You Need</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#raphael">Raphael</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#school-of-athens">School of Athens</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#speculation-on-raphael-s-intentions">Speculation on Raphael’s Intentions:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pain-management">Pain Management</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="part-2">
+<h1>Part 2<a class="headerlink" href="#part-2" title="Permalink to this heading">#</a></h1>
+<section id="th-wall">
+<h2>4th Wall<a class="headerlink" href="#th-wall" title="Permalink to this heading">#</a></h2>
+<p>In <em>Don Giovanni</em>, Mozart masterfully breaks the fourth wall during the Act II finale, where Don Giovanni calls for musicians to entertain him at a feast. Mozart doesn’t just include any music—he cleverly inserts musical references that the audience of the time would immediately recognize. The musicians play excerpts from popular operas of the 1780s, such as <em>Una cosa rara</em> by Vicente Martín y Soler and <em>Fra i due litiganti</em> by Giuseppe Sarti. These operas were well-known hits, and the audience in Prague, where <em>Don Giovanni</em> premiered, would catch the humorous allusions and enjoy the self-referential nods.</p>
+<p>In an even more playful twist, the ensemble performs “Non più andrai” from <em>The Marriage of Figaro</em>, one of Mozart’s own operas. Leporello, Don Giovanni’s servant, remarks that he knows the piece “only too well,” a wink to the audience since the same singer played Figaro in its Prague premiere. This meta-commentary directly engages the audience, blending fiction and reality in a way that makes them feel part of the scene, effectively breaking the barrier between the stage and the spectators</p>
+</section>
+<section id="attention-is-all-you-need">
+<h2><a class="reference external" href="https://en.wikipedia.org/wiki/Attention_Is_All_You_Need">Attention is All You Need</a><a class="headerlink" href="#attention-is-all-you-need" title="Permalink to this heading">#</a></h2>
+<p>Exploring the layers of <em>Don Giovanni</em> through pretext, text, subtext, context, hypertext, and metatext really unravels the complexity and brilliance of Mozart’s opera. Let’s break it down:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>          1. Strategies, σ
+                          \
+        2. Payoffs, Ψ  -&gt; 4. Modal-Chordal-Groove, Δ -&gt; 5. NexToken, τ -&gt; 6. Arcs, Ω 
+                          /
+                          3. Equilibria, ε
+</pre></div>
+</div>
+<ol class="arabic">
+<li><p><strong>Pretext</strong>: This refers to the “cover story” or justification behind an action or event. In <em>Don Giovanni</em>, the pretext is often Don Giovanni’s seductions and manipulations—on the surface, he claims to be driven by love or desire, but the deeper truth is his insatiable lust for power and control over others.</p></li>
+<li><p><strong>Text</strong>: The text is the literal dialogue and action of the opera. Don Giovanni’s interactions, his banter with Leporello, and his flippant disregard for consequences form the immediate surface layer. The actual arias and spoken words reflect this level, which in a traditional sense, are what the audience encounters directly.</p></li>
+<li><p><strong>Subtext</strong>: This is where <em>Don Giovanni</em> gets really interesting. The subtext reveals underlying tensions and emotions—Don Giovanni is not merely a rogue; he’s an embodiment of a man facing inevitable damnation, haunted by his actions. His bravado hides his fear, and characters like Donna Elvira operate with layered emotions like love and betrayal, adding rich psychological dimensions.</p></li>
+<li><p><strong>Context</strong>: The context of <em>Don Giovanni</em> lies in its creation during the late 18th century. The opera premiered in Prague in 1787, a time of enlightenment but also social unrest. The character of Don Giovanni can be seen as a critique of aristocratic impunity, as his unchecked behavior eventually leads to a cosmic form of justice. This gives the opera a political dimension, where Mozart and Da Ponte subtly push against the societal order of the time.</p></li>
+<li><p><strong>Hypertext</strong>: Mozart weaves in hypertext, or intertextuality, by referencing other works—particularly in the finale where Don Giovanni’s feast features music from other popular operas of the day. This not only breaks the fourth wall but connects <em>Don Giovanni</em> with the broader musical landscape, creating a web of associations that the audience of Mozart’s time would instantly recognize【7†source】【8†source】.</p></li>
+<li><p><strong>Metatext</strong>: The opera becomes self-referential when Leporello makes a comment about recognizing <em>Non più andrai</em> from <em>The Marriage of Figaro</em>, in which the actor playing Leporello also played Figaro. This is pure metatextuality, where the opera is aware of itself as a performance. It lets the audience in on the joke, blending reality and fiction in a sophisticated way.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>          1. Pretext, σ
+                       \
+        2. Text, Ψ  -&gt; 4. Context, Δ -&gt; 5. Hyptertext, τ -&gt; 6. Metatext, Ω 
+                       /
+                       3. Subtext, ε
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Mozart didn’t just compose an opera—he created a multilayered experience that invites interpretation on every level, from the literal to the symbolic, the humorous to the tragic.</p>
+<p>From the perspective of <strong>strategy, payoff, and equilibrium</strong>, let’s examine how these textual elements function:</p>
+<ol class="arabic simple">
+<li><p><strong>Pretext</strong> (Strategy): Pretext is often a tactic or strategy characters use to manipulate others or justify their actions. In <em>Don Giovanni</em>, Don Giovanni’s pretext for his behaviors—seduction, pleasure, and rebellion against authority—is a strategic choice to maintain his freedom and dominance. He presents himself as charming and harmless, but his true intentions are self-serving and destructive. This aligns with a strategy of deceit and manipulation in social dynamics.</p></li>
+<li><p><strong>Text</strong> (Payoff): The text represents the overt actions, dialogue, and music of the opera. It is the payoff from the strategy. By executing his pretext, Don Giovanni’s immediate payoff is temporary pleasure, satisfaction of desires, and short-lived victories over his adversaries. But in the grand scheme, the cost of these payoffs accumulates, leading to his downfall. The literal action (text) often provides immediate gratification, but it’s the subtext that hints at the deeper consequences waiting for him.</p></li>
+<li><p><strong>Subtext</strong> (Equilibrium): The subtext speaks to the underlying equilibrium of the narrative. While the surface action seems to show Don Giovanni succeeding through his cunning strategies, the subtext reveals an inevitable rebalancing. His downfall—when the statue of the Commendatore drags him to hell—is the ultimate equilibrium, restoring justice. Subtext reflects the moral balance the opera seeks to establish, with the tension between Giovanni’s transgressions and the social and cosmic laws he breaks.</p></li>
+<li><p><strong>Context</strong> (Strategic Positioning): Context provides the broader strategic environment in which Don Giovanni operates. As an aristocrat in a society struggling with Enlightenment ideals and social inequalities, Giovanni’s reckless behavior can be seen as a critique of the powerful elite. His strategy may work for a time because of his position, but it’s doomed to fail within the shifting context of morality and justice. The Enlightenment context positions Giovanni’s destruction as part of the inevitable social change.</p></li>
+<li><p><strong>Hypertext</strong> (Meta Payoff): Hypertext functions as an extra layer of interaction. By quoting famous operas within the finale, Mozart creates a meta-narrative, generating a higher payoff for audience members familiar with those references. This is akin to a bonus in strategy games, where the player who recognizes deeper levels of the game gains more satisfaction. The inclusion of familiar arias enriches the audience’s experience, acting as a playful nod to their cultural knowledge, thus expanding the dimensions of the payoff.</p></li>
+<li><p><strong>Metatext</strong> (Equilibrium Realized): Finally, metatext functions as a self-aware realization of the opera’s equilibrium. Mozart’s acknowledgment of the audience, breaking the fourth wall, reflects that the opera is not just a tale of Giovanni but a commentary on performance itself. The metatextuality achieves a balance between the operatic world and the audience’s reality, integrating the two into one cohesive experience, reflecting an equilibrium between art and life.</p></li>
+</ol>
+<p>In summary, <strong>strategy</strong> (pretext and context) drives <strong>payoffs</strong> (text and hypertext), but the narrative ultimately seeks <strong>equilibrium</strong> (subtext and metatext), restoring balance to the chaos caused by Don Giovanni’s transgressions.</p>
+</section>
+<section id="raphael">
+<h2>Raphael<a class="headerlink" href="#raphael" title="Permalink to this heading">#</a></h2>
+<p>While Raphael (Raffaello Sanzio da Urbino) is primarily known for his mastery of High Renaissance painting and his ability to convey divine and human beauty, the concept of “breaking the fourth wall” as we understand it today in theater or film doesn’t directly apply to the artistic conventions of his time. However, there are moments in his work where he engages the viewer in ways that could be interpreted as breaking the fourth wall.</p>
+<p>In his frescoes, particularly in <em>The School of Athens</em> (1509-1511), Raphael invites the viewer into a complex, intellectual dialogue. The figures in the fresco, many of whom represent famous philosophers, are deeply immersed in their discussions, but some appear to gaze outward, making subtle eye contact with the viewer. This can be seen as Raphael engaging with his audience, blurring the lines between the painted world and the real one. This kind of engagement is a more Renaissance version of what we might now interpret as “breaking the fourth wall.”</p>
+<p>Additionally, his portrait work sometimes incorporates direct gazes from the subject to the viewer, creating an intimate connection. For instance, in <em>Portrait of Baldassare Castiglione</em> (1514-1515), the sitter’s direct gaze feels introspective, yet outward-reaching, almost acknowledging the presence of the viewer. This could be seen as another form of inviting the viewer into the painted reality.</p>
+<p>While Raphael didn’t break the fourth wall in a literal sense, he was a master of composition and visual engagement, subtly connecting the worlds inside and outside his paintings. This technique, combined with his command of space, often leaves viewers feeling as if they are part of the intellectual and emotional conversations within his works.</p>
+</section>
+<section id="school-of-athens">
+<h2>School of Athens<a class="headerlink" href="#school-of-athens" title="Permalink to this heading">#</a></h2>
+<p>In <em>The School of Athens</em>, Raphael includes two self-referential figures on either side of the composition, and these figures engage in a subtle form of “breaking the fourth wall” by making eye contact with the viewer. These two figures are none other than <strong>Raphael himself</strong> and his close contemporary, <strong>Perugino</strong> (Pietro di Cristoforo Vannucci), Raphael’s mentor.</p>
+<ul class="simple">
+<li><p><strong>Raphael</strong>: He is positioned near the right side, slightly behind and to the left of the figure representing <strong>Zoroaster</strong> (who holds a globe). Raphael is gazing directly at the viewer, a nod to his presence as both the creator of the fresco and a participant in the intellectual dialogue depicted in the scene. His inclusion among the greatest philosophers could be seen as a humble yet bold self-insertion, marking his place within this pantheon of thinkers.</p></li>
+<li><p><strong>Perugino</strong>: Opposite Raphael, near the far left side of the fresco, is a figure that strongly resembles Perugino, his teacher. Perugino’s likeness also gazes out at the audience, seemingly drawing them into the work’s grand philosophical conversation, and acknowledging the importance of mentorship and artistic heritage.</p></li>
+</ul>
+<p>The two cherubs (putti) you mention can be found in other works by Raphael, especially in <em>Sistine Madonna</em> and <em>The Triumph of Galatea</em>. These cherubs, with their impish stares or contemplative gazes outward, invite the viewer into a playful or divine reflection, reminding us that Raphael consistently integrated figures who seemed aware of being observed.</p>
+<section id="speculation-on-raphael-s-intentions">
+<h3>Speculation on Raphael’s Intentions:<a class="headerlink" href="#speculation-on-raphael-s-intentions" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Dialogue with the Audience</strong>: By including these self-referential figures, Raphael creates a dialogue between the observer and the painting. It invites the viewer not just to observe passively but to engage in the intellectual activity occurring within the fresco. In a way, Raphael and Perugino are acting as intermediaries, bridging the gap between the world of philosophy and the present-day audience.</p></li>
+<li><p><strong>Immortality of the Artist</strong>: The gaze of the Raphael figure could be seen as a statement of the artist’s immortal presence within the intellectual and artistic conversations of his time. By depicting himself among the great philosophers, Raphael subtly claims his own place in history, beyond just a craftsman but as an intellectual and a thinker in his own right.</p></li>
+<li><p><strong>Playfulness and Humility</strong>: The cherubs often display a playful, knowing look, almost as if they’re in on a joke or divine secret. In <em>The School of Athens</em>, Raphael might be using this same playful gesture to bring some levity to the intense intellectual scene. It could also reflect Raphael’s humility—despite the grandness of the work, these small, playful elements bring a touch of humanity.</p></li>
+<li><p><strong>Conscious Reflection on Creation</strong>: By inserting figures that acknowledge the audience, Raphael might be encouraging the viewer to reflect on the act of creation itself. This self-awareness signals that art isn’t just about representation but is also a meta-commentary on the process of artistic production and intellectual inquiry.</p></li>
+</ol>
+<p>Raphael’s subtle engagement with the audience through these figures enriches the fresco’s complexity and highlights his genius as an artist who could blend theological, philosophical, and humanistic elements with ease.</p>
+</section>
+</section>
+<section id="pain-management">
+<h2>Pain Management<a class="headerlink" href="#pain-management" title="Permalink to this heading">#</a></h2>
+<p>Absolutely, adopting a strategy where the primary payoff is numbing pain is inherently dangerous because it essentially sidesteps the root problem. Rather than confronting the source of discomfort or conflict head-on, the focus shifts to temporary relief. This can create a fragile equilibrium where unresolved issues linger beneath the surface, potentially escalating over time.</p>
+<p>In terms of strategy, numbing the pain can lead to avoidance behavior, which prevents any real adaptation or learning. The payoff, while providing short-term comfort, is a psychological trap. It undermines long-term growth and resilience because the underlying problem festers. The equilibrium, then, is illusory—it’s fragile and unsustainable. Eventually, the system destabilizes when the temporary fix no longer works.</p>
+<p>From a game-theory perspective, it’s like choosing a short-term reward over a long-term solution, which is a poor strategy in the long run.</p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./act2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../act1/chapter3.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Chapter 3</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 1</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#th-wall">4th Wall</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attention-is-all-you-need">Attention is All You Need</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#raphael">Raphael</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#school-of-athens">School of Athens</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#speculation-on-raphael-s-intentions">Speculation on Raphael’s Intentions:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pain-management">Pain Management</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © 2025 ADM
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
