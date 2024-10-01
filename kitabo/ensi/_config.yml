@@ -5,7 +5,7 @@
 #######################################################################################
 # Book settings
 title                       : Mozart  # The title of the book. Will be placed in the left navbar.
-author                      : "ADM"  # The author of the book
+author                      :   # The author of the book
 copyright                   : "2025"  # Copyright year to be placed in the footer
 logo                        : figures/logo.png # https://facts.net/wp-content/uploads/2023/07/16-facts-about-roulette-1690805803.jpg # "figures/ultimate.png"  # A path to the book logo
 email                       : "abikesa.sh@gmail.com"

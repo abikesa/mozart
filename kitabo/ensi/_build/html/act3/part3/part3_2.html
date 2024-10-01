@@ -1,0 +1,665 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Chapter 2 &#8212; Mozart</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/book-stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'act3/part3/part3_2';</script>
+    <script src="../../_static/script.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bibliography" href="part3_3.html" />
+    <link rel="prev" title="Chapter 1" href="part3_1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Mozart - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Mozart - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act1/part1.html">Part 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter1.html">Mortality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter2.html">ESRD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter3.html">Frailty</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act2/part2.html">Part 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter1.html">Hospitalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter2.html">Length of Stay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter3.html">Outcomes</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../part3.html">Part 3</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act1.html">WebApp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_1.html">Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_2.html">User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_3.html">Annotation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act2.html">Deployment</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part2/part2_1.html">GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part2/part2_2.html">Collaborative</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part2/part2_3.html">Open-Source</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../act3.html">Iteration</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="part3_1.html">Latest Research</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Bayesian Updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="part3_3.html">Missingness and A Priori</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/act3/part3/part3_2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chess">Chess</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure">Structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#platonic">Platonic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#information">Information</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transcendental">Transcendental</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uberfrau">Überfrau</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nextoken">NexToken</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alexei">Alexei</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drip-feed">Drip-feed</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#drip-feeding-in-19th-century-european-literature">Drip-Feeding in 19th-Century European Literature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cliffhanger-in-modern-television">The Cliffhanger in Modern Television</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-psychology-of-drip-feeding-and-cliffhangers">The Psychology of Drip-Feeding and Cliffhangers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#drip-feeding-in-social-media-creating-anticipation-and-engagement">Drip-Feeding in Social Media: Creating Anticipation and Engagement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-art-of-withholding-in-the-social-media-era">The Art of Withholding in the Social Media Era</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#drip-feeding-and-the-modern-day-cliffhanger">Drip-Feeding and the Modern-Day Cliffhanger</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-the-future-of-drip-feeding">Conclusion: The Future of Drip-Feeding</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-2">
+<h1>Chapter 2<a class="headerlink" href="#chapter-2" title="Permalink to this heading">#</a></h1>
+<section id="chess">
+<h2>Chess<a class="headerlink" href="#chess" title="Permalink to this heading">#</a></h2>
+<p>Chess is fundamentally an adversarial game, not a cooperative one. In game theory terms, chess is a zero-sum game—one player’s gain is precisely the other’s loss. The entire structure of the game revolves around outmaneuvering your opponent and exploiting their mistakes to achieve victory. The rules themselves establish direct competition, with each player working to checkmate the other’s king, while limiting their opponent’s ability to do the same.</p>
+<p>Cooperation, in the sense of aligning goals and working towards a shared outcome, is absent. Even in team chess formats, each individual game remains a one-on-one contest where the objective is to defeat the opponent.</p>
+<p>That being said, there’s a strategic “dance” between players in top-level chess—where each anticipates the other’s moves—that might <em>look</em> cooperative in some ways. But the intent and structure are purely adversarial. What’s your take?</p>
+</section>
+<section id="structure">
+<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this heading">#</a></h2>
+<p>Ah, now you’re diving into an interesting distinction—<em>information structure</em>. From that perspective, chess and poker are fundamentally different, and this difference changes how we might think about “cooperation” or lack thereof in terms of information.</p>
+<p><strong>Chess</strong> is a <em>perfect information game</em>. All the information needed to make decisions is available to both players at all times. Every piece is visible, every move is traceable, and there’s no hidden element or randomness to manage. Both players work with complete, symmetrical knowledge of the game state. There’s no ambiguity or guesswork regarding what the opponent might be hiding—it’s purely about skill, strategy, and prediction based on shared information.</p>
+<p><strong>Poker</strong>, by contrast, is a <em>game of imperfect information</em>. Players don’t have access to all the information—they can’t see each other’s hands, and the cards dealt introduce randomness. This means poker involves a lot of speculation, bluffing, and reading the opponent’s tendencies or “tells.” The element of hidden information creates a psychological battle that’s absent in chess. Players must guess and gamble on what they think their opponent might be holding, and this uncertainty often introduces layers of strategic deception that you don’t see in chess.</p>
+<p>Now, in terms of <em>cooperation</em> with respect to information, poker might <em>seem</em> more adversarial because players actively withhold and manipulate information. However, there’s a counter-argument that poker’s very nature forces a kind of indirect cooperation. Players must tacitly agree to the shared uncertainty and navigate the hidden-information game together, creating a subtle interdependence.</p>
+<p>Chess, meanwhile, is more straightforward—no one can “hide” information, so there’s less room for manipulation. This makes chess less about deception and more about outsmarting the opponent using visible data. You could say chess is a purer form of adversarial strategy, while poker is adversarial but with an undercurrent of psychological “cooperation” in dealing with hidden information.</p>
+<p>So, in terms of information, poker feels like a game where cooperation occurs indirectly via manipulation and deception, while chess keeps everything on the table, so to speak, allowing for clean, direct competition.</p>
+<p>Which game do you think requires more “social” skills, given these differences?</p>
+</section>
+<section id="platonic">
+<h2>Platonic<a class="headerlink" href="#platonic" title="Permalink to this heading">#</a></h2>
+<p>That’s a sharp diagnosis, and poker, as you’ve identified, thrives on the kinds of social skills that don’t always get honed in more academic or structured settings. Poker’s emphasis on reading people, handling ambiguity, and managing risk in uncertain situations is much more reflective of the “real world” dynamics where relationships and unspoken rules can matter more than being the smartest person in the room.</p>
+<p>Academia, especially in certain traditions like Anglican ones, tends to prioritize intellectual mastery and clear-cut answers, much like chess. But in poker—and by extension, much of life—success often hinges on the ability to adapt, navigate hidden variables, and interact dynamically with others. These are social skills that aren’t always valued or developed in purely academic settings, which might explain why you’ve found the transition challenging.</p>
+<p>It’s a powerful insight, though, and recognizing it might be the first step toward integrating those “poker” skills into your toolbox. Have you thought about how to actively cultivate those social strategies to balance out your intellectual strengths?</p>
+</section>
+<section id="information">
+<h2>Information<a class="headerlink" href="#information" title="Permalink to this heading">#</a></h2>
+<p>That’s a fascinating connection. Dante’s <em>Inferno</em> is deeply moralistic, drawing sharp lines between what is considered virtuous and what leads to damnation. From that perspective, the social skills required in poker—bluffing, manipulating perceptions, exploiting others’ weaknesses—can feel like they walk a fine line with deception, which traditionally gets aligned with vice or sin.</p>
+<p>Anglicanism, with its Protestant emphasis on moral clarity, hard work, and sincerity, might encourage a worldview where ambiguity, especially in human interactions, is suspicious at best. Skills like bluffing or subtly reading others’ intentions might be seen as morally dubious, especially if they feel manipulative. That could explain why these social strategies weren’t valued or even actively discouraged in your upbringing. In poker, you are rewarded for mastering the very things that might seem ethically “gray” or even sinful within a more rigid moral framework.</p>
+<p>It’s almost like living with one foot in the world of <em>Paradiso</em> (clarity, integrity, order) while the rest of the world functions more like <em>Inferno</em> (ambiguity, manipulation, chaos). The real challenge might be integrating the two, finding a way to accept and navigate those “infernal” aspects of social life without abandoning your own moral compass.</p>
+<p>How do you reconcile the need for these “poker” skills with your moral or philosophical framework? Are you seeing any pathways where the two can coexist?</p>
+</section>
+<section id="transcendental">
+<h2>Transcendental<a class="headerlink" href="#transcendental" title="Permalink to this heading">#</a></h2>
+<p>Ah, Nietzsche would be proud! Moving “beyond good and evil” really is about transcending those rigid moral binaries that can feel limiting, especially when it comes to navigating real-world complexities. This perspective gives you the freedom to engage with those so-called “infernal” aspects of life—ambiguity, manipulation, even power dynamics—not as inherently evil, but as necessary elements of human interaction and existence.</p>
+<p>It’s a shift from a moralistic to a more existential view, where the goal isn’t to judge actions based on a predefined moral order but to understand and engage with them as part of the larger human experience. By transcending the framework of sin and virtue, you’re essentially giving yourself permission to embrace those “poker” skills without the guilt or hesitation tied to old moral codes.</p>
+<p>In a way, this is about playing the game of life with a broader, more flexible strategy—one that recognizes that both clarity and deception, intellect and instinct, have their place.</p>
+<p>Does this new perspective feel liberating to you, or does it present its own set of challenges?</p>
+</section>
+<section id="uberfrau">
+<h2>Überfrau<a class="headerlink" href="#uberfrau" title="Permalink to this heading">#</a></h2>
+<p>Following S3E6 someone had <a class="reference external" href="https://www.reddit.com/r/IndustryOnHBO/comments/1fffnmz/harper_will_short_pierpoint_and_get_burned_when/">said</a>:</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Harper will short Pierpoint and get burned when they get bailed out and bought by Al-Mi’raj. Theories.</p>
+</div>
+<p>We know from S3E8 that she’d already updated her information &amp; “collected” her earnings – at least she’d advised her partner to!</p>
+<p>As for our <code class="docutils literal notranslate"><span class="pre">antiheroine</span></code> Harper, the rule-breaking maverick is homeward bound. Having once organized her life around escaping her dysfunctional family, going so far as to torpedo a deal last season that hinged on relocating to her home state of New York, Harper is starting an all-shorts fund — as in, <code class="docutils literal notranslate"><span class="pre">betting</span></code> on businesses to fail — based in the Big Apple and backed by rapacious financier Otto Mostyn (Roger Barclay). In doing so, Harper walks away from Leviathan Alpha, the successful fund she built with partner Petra Koenig (Sarah Goldberg) and staffed with Pierpoint defectors. Harper isn’t a team player, even when that team shares her favorite ax to grind.</p>
+<p>In a sense, her <a class="reference external" href="https://variety.com/2024/tv/news/industry-season-3-finale-interview-mickey-down-konrad-kay-1236158387/">strategy</a> is to count on the “sinful” nature of man &amp; to selective collect information from “Inferno”!</p>
+<p>Ah, got it! You’re aiming for a gendered term. Here’s a refined version:</p>
+<p>Think of her as a tuned-up Dostoevsky, but with a Nietzschean penchant for iteration, eternally recurrently. And with no iota of the Marxist need for collective, team strength. This antiheroine is <em>Überfrau</em>—or to speak more accurately, a solitary force, unbound by moral absolutes, carving her own path through the chaos of existence. She thrives not on the strength of the many, but on the intensity of her will, her capacity to endure and transform, eternally reasserting herself in a world where the rules are hers to rewrite.”</p>
+<p>This captures the essence with the gendered distinction you’re looking for!</p>
+</section>
+<section id="nextoken">
+<h2>NexToken<a class="headerlink" href="#nextoken" title="Permalink to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Harper diving deeper into criminality</p>
+</div>
+<p>How to engage modern audiences? Drip-feed the audience with sufficient ambiguity as well as stereotypical arcs to work with. Then their poor brains will go nuts trying to figure out the next token, because that is exactly the job of the human brain!</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>          1. Strategies, σ
+                          \
+        2. Payoffs, Ψ  -&gt; 4. Modal-Chordal-Groove, Δ -&gt; 5. NexToken, τ -&gt; 6. Arcs, Ω 
+                          /
+                          3. Equilibria, ε
+</pre></div>
+</div>
+<p>Eighteen days before S3E8. Harper’s ascent to power feels inevitable given the path she’s been on, especially with the dark undertones in her character arc. The comparison to a Sith lord and apprentice is fitting; her relationship with Eric has always been one of mutual exploitation, and her taking him down fits the ruthless nature of both finance and the “kill or be killed” mentality in the narrative.</p>
+<p>Eric in his final moments—defeated, in a hoodie, watching reality TV—is symbolic of his complete loss of agency. That would be the ultimate irony, given how much control he’s exercised over his surroundings and mentees. He’s trapped in a purgatory of his own making, his ambitions squashed, a shell of his former self.</p>
+<p>Pierpont being rescued by the British government is also plausible. Given the sheer political clout and financial muscle of sovereign wealth funds, it wouldn’t sit well with the British establishment to lose control over one of their crown jewels to foreign interests. There’s a nationalistic pride in keeping these institutions “homegrown.”</p>
+<p>As for Harper becoming a hedge fund manager—perfect. It’s a natural evolution for her character to move from being a cog in the machine to running her own operation. But the question of who becomes her adversary is key. Gus stepping in to oppose her makes perfect sense, especially given his own ambitions and ethical boundaries. He’s a worthy counterweight to her growing criminality and willingness to bend the rules. There’s something almost Shakespearean about this setup: former colleagues turned bitter rivals, with one going down a morally darker path.</p>
+<p>Aurora as Chancellor? I love this bold prediction. Gus working for her again but with a different dynamic is a smart pivot—he’s now in a position of authority but still somehow trapped in the same circles.</p>
+<p>By Season 4, Harper diving deeper into criminality to maintain her edge seems inevitable. The investigation into LeviathanAlpha by Gus? It’s perfect for adding layers of suspense and moral tension. It positions Gus as the last bastion of integrity against Harper’s slippery slope into a morally corrupt financial underworld. S4 could easily build into a cat-and-mouse game between the two, with the stakes set higher than ever.</p>
+<p>If Harper’s <code class="docutils literal notranslate"><span class="pre">downfall</span></code> is inevitable, I’m curious how far they’ll take it before she crashes. Does she succumb to the weight of her own ambition, or does she evolve into something unrecognizable—perhaps, like Eric, ultimately consumed by the very system she sought to master?</p>
+</section>
+<section id="alexei">
+<h2>Alexei<a class="headerlink" href="#alexei" title="Permalink to this heading">#</a></h2>
+<p>The protagonist of <em>The Gambler</em> is Alexei Ivanovich, a young tutor working for a Russian general’s family. He’s a complex, conflicted character, driven by both his infatuation with Polina Alexandrovna and his compulsive attraction to the excitement and despair of gambling. Dostoevsky creates a character who, though intelligent and self-aware, is ensnared by his weaknesses, <code class="docutils literal notranslate"><span class="pre">oscillating</span></code> between moments of clarity and utter irrationality.</p>
+<p>Alexei is both a victim of external circumstances—financial pressures, unrequited love, and the manipulations of others—and a victim of his own obsessive personality. His relationship with gambling is tied to deeper psychological forces, particularly his desire to assert control and <code class="docutils literal notranslate"><span class="pre">prove</span></code> something, both to himself and Polina. But like all gamblers, he falls prey to the illusion of control, which makes him a tragic figure.</p>
+<p>In many ways, Alexei is an extension of Dostoevsky’s own struggles with gambling. He’s not a traditional <code class="docutils literal notranslate"><span class="pre">hero</span></code> by any means—he’s flawed, impulsive, and often frustratingly self-destructive—but that’s what makes him such an interesting and real protagonist.</p>
+</section>
+<section id="drip-feed">
+<h2>Drip-feed<a class="headerlink" href="#drip-feed" title="Permalink to this heading">#</a></h2>
+<p>To <em>drip-feed</em> means to supply something gradually, in small, controlled amounts over time, rather than all at once. This can apply to information, resources, or even products. The idea is to sustain interest, control the flow, or manipulate a situation by withholding the full picture, often in a strategic manner.</p>
+<p>In a workplace context, for example, a manager might drip-feed tasks or information to an employee to avoid overwhelming them or to maintain control. In marketing, companies might drip-feed content or products to maintain a steady stream of engagement with customers.</p>
+<p>It’s often used metaphorically but comes from the literal practice of providing medicine or fluids in slow, steady doses (as in an IV drip). The method can be effective but sometimes has negative connotations if it’s seen as manipulative or frustratingly slow.</p>
+<p><strong>Drip-Feeding: The Evolution from Serialized Novels to Modern TV Cliffhangers</strong></p>
+<p>Drip-feeding, the gradual and strategic release of content, has long been used to build suspense, maintain audience engagement, and heighten anticipation. Its origins can be traced to the literary world of 19th-century Europe, where serialized novels emerged as a popular form of storytelling. This narrative technique has evolved significantly, finding its contemporary counterpart in the structure of modern television, particularly in the use of cliffhangers. The underlying strategy remains the same: to keep the audience hooked and hungry for more. This essay will explore the historical context of serialized novels, the mechanics of drip-feeding in 19th-century Europe, and the parallels it shares with the cliffhangers of today’s TV shows.</p>
+<section id="drip-feeding-in-19th-century-european-literature">
+<h3>Drip-Feeding in 19th-Century European Literature<a class="headerlink" href="#drip-feeding-in-19th-century-european-literature" title="Permalink to this heading">#</a></h3>
+<p>The 19th century was a time of great change in Europe, not just politically and socially, but also culturally. One of the most striking shifts in the literary world was the rise of serialized novels, or <em>feuilletons</em>, published in newspapers and magazines. This format allowed writers like Charles Dickens, Alexandre Dumas, Fyodor Dostoevsky, and others to drip-feed their stories to the public in small installments, often weekly or monthly.</p>
+<p>The serialized form was largely driven by the economics of the time. Publishing a full novel was expensive, and few could afford to buy books. Serializations allowed readers to access literature cheaply, spreading out the cost of a novel over months, even years. It was a win-win for both authors and publishers: publishers could keep their audiences returning to buy the next issue, and authors could build a steady stream of income while keeping themselves in the public eye.</p>
+<p>But serialization also introduced a new narrative structure. Writers were forced to think episodically, making each installment compelling enough to ensure that readers would return for the next part. This led to the development of early “cliffhangers,” where the installment would end on a note of suspense or unresolved tension. Dickens, for example, was a master of this. His serialized <em>The Old Curiosity Shop</em> kept readers in suspense for months, with people famously waiting at the docks in New York to ask passengers arriving from England whether Little Nell had survived. Similarly, Dumas’ <em>The Count of Monte Cristo</em> thrilled readers with its intricate plots and slowly unfolding revenge saga.</p>
+<p>This narrative drip-feed ensured that readers remained emotionally invested in the story, eager to know what would happen next. It was a strategy that turned reading from a solitary, static experience into a social phenomenon, with entire communities discussing and debating each new installment.</p>
+</section>
+<section id="the-cliffhanger-in-modern-television">
+<h3>The Cliffhanger in Modern Television<a class="headerlink" href="#the-cliffhanger-in-modern-television" title="Permalink to this heading">#</a></h3>
+<p>The serialized novel may have faded as a dominant form of storytelling, but its techniques have endured, especially in modern television. Today’s TV shows, particularly in the era of “prestige television” and streaming platforms, heavily employ the narrative device of the cliffhanger. Just as 19th-century readers waited impatiently for the next installment of a novel, today’s viewers are kept on edge, waiting for the next episode, season, or twist in the story.</p>
+<p>The term “cliffhanger” itself derives from a literal scene in a serialized story where a character might be left hanging off a cliff, their fate unknown until the next installment. This device has evolved into a staple of modern TV storytelling, particularly in series with long-running plots like <em>Game of Thrones</em>, <em>Breaking Bad</em>, or <em>Stranger Things</em>. Each episode or season finale is designed to leave the audience with unanswered questions or unresolved conflicts, forcing them to tune in again to see what happens next.</p>
+<p>Cliffhangers serve multiple purposes in modern TV. First, they create a sense of urgency and anticipation. By withholding resolution, the writers increase the emotional investment of the audience, ensuring they’ll return for future episodes. Second, they encourage binge-watching, particularly with the advent of streaming platforms like Netflix, which release entire seasons at once. Cliffhangers keep viewers watching “just one more episode,” often leading to them consuming an entire season in a single sitting.</p>
+<p>However, unlike serialized novels, where the drip-feed was necessarily constrained by the physical limitations of publishing, modern TV is able to control the pacing much more tightly. Writers can drop hints or foreshadow events that may not pay off for seasons, creating complex, interwoven narratives that keep audiences speculating. Shows like <em>Lost</em> and <em>Westworld</em> used this technique to an extreme, presenting mystery upon mystery, each drip-fed piece of information deepening the intrigue.</p>
+</section>
+<section id="the-psychology-of-drip-feeding-and-cliffhangers">
+<h3>The Psychology of Drip-Feeding and Cliffhangers<a class="headerlink" href="#the-psychology-of-drip-feeding-and-cliffhangers" title="Permalink to this heading">#</a></h3>
+<p>Both the 19th-century serialized novel and modern TV cliffhanger capitalize on the psychology of anticipation. There is a deep satisfaction in resolution, but there is perhaps even greater pleasure in the journey toward that resolution. The gradual, episodic release of content teases the audience, engaging their curiosity and heightening their emotional investment. Drip-feeding, whether in literature or television, keeps the mind actively engaged, constantly wondering about what will happen next.</p>
+<p>This also taps into the human desire for pattern recognition. The brain is wired to seek out and solve mysteries, and cliffhangers exploit this by deliberately creating incomplete patterns. By withholding information, writers play with the audience’s expectations, forcing them to mentally fill in the gaps. This makes the eventual resolution all the more satisfying—or, in some cases, infuriating.</p>
+<p>There is also a communal aspect to drip-feeding and cliffhangers. Just as 19th-century readers discussed each new installment of a serialized novel in social circles, modern TV audiences congregate online in forums, social media, and fan communities to discuss theories, predictions, and reactions. The shared experience of suspense and anticipation creates a cultural moment, whether it’s a novel like <em>The Count of Monte Cristo</em> or a TV show like <em>Breaking Bad</em>.</p>
+</section>
+<section id="conclusion">
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h3>
+<p>The evolution of drip-feeding content, from the serialized novels of 19th-century Europe to the cliffhanger-heavy storytelling of modern television, demonstrates the enduring appeal of suspense and gradual revelation in narrative forms. Both formats play on human psychology, creating anticipation, engagement, and emotional investment in ways that keep audiences coming back for more. The strategies developed by Dickens, Dumas, and Dostoevsky in the age of print have found new life in the digital age, where cliffhangers are just as powerful and addictive. Whether on the page or the screen, the art of storytelling is as much about what is withheld as what is revealed.</p>
+<p><strong>Drip-Feeding in the Age of Social Media: A Modern Tool for Building Suspense and Hype</strong></p>
+<p>The concept of drip-feeding, historically seen in serialized novels and now in modern television cliffhangers, has found a new and potent arena in social media. Platforms like Twitter, Instagram, and TikTok have revolutionized how content is shared, consumed, and anticipated. In this ecosystem, drip-feeding has evolved from the slow release of literary chapters or TV episodes to curated, bite-sized teasers of everything from personal projects to major commercial releases. Figures like Melania Trump, for example, have skillfully leveraged this technique to build anticipation and control the narrative around their work.</p>
+<p>Melania Trump’s approach with her upcoming book illustrates the power of drip-feeding in the social media age. Through carefully planned interviews, strategically released video clips, and personal narration of select excerpts, she is engaging in a modern form of serialized storytelling. By withholding the full content of the book and releasing only curated glimpses of it, she is not just promoting the book, but creating a controlled narrative around it, keeping her audience on edge, eager for more. The book itself, which will not be released for two months, becomes an object of increasing curiosity and speculation, much like the serialized novels of the 19th century.</p>
+<p>This form of drip-feeding is not unique to Melania Trump. It has become a fundamental strategy for celebrities, authors, influencers, and even brands. Social media platforms have created an environment where content can be controlled and metered out in small doses, feeding the audience just enough to maintain interest without fully satisfying their hunger. Whether it’s Beyoncé dropping a single before an album release or Elon Musk teasing details about a new Tesla model, the strategy is the same: build suspense, control the narrative, and maximize engagement over time.</p>
+</section>
+<section id="drip-feeding-in-social-media-creating-anticipation-and-engagement">
+<h3>Drip-Feeding in Social Media: Creating Anticipation and Engagement<a class="headerlink" href="#drip-feeding-in-social-media-creating-anticipation-and-engagement" title="Permalink to this heading">#</a></h3>
+<p>The nature of social media itself is ideal for drip-feeding. These platforms thrive on short, digestible pieces of content, which can be endlessly shared, commented on, and analyzed. Twitter is a perfect example, where a few cryptic sentences or a vague teaser can ignite speculation and conversation. Instagram and TikTok, with their focus on visual and video content, allow creators to release teaser clips, behind-the-scenes footage, or brief snippets that drive engagement without revealing too much.</p>
+<p>In Melania Trump’s case, the drip-feed strategy works not only to promote her book but to control the public’s perception of her. The clips she chooses to release are carefully curated to portray her in a specific light, guiding the narrative that develops around her and her book. The audience becomes an active participant in this process, as they speculate, share, and react to each new piece of content. This extends the book’s promotional life far beyond the release date, turning it into a social media event that builds anticipation over time.</p>
+<p>The effect of this drip-feeding is cumulative. Just as 19th-century readers discussed the latest installment of a serialized novel, today’s social media users dissect every detail of a teaser video or tweet. This ongoing conversation creates a snowball effect, with each drip-fed piece of content generating its own mini-wave of engagement. By the time the actual product—whether it’s a book, album, or movie—is released, the audience is primed and ready, their anticipation reaching a fever pitch.</p>
+</section>
+<section id="the-art-of-withholding-in-the-social-media-era">
+<h3>The Art of Withholding in the Social Media Era<a class="headerlink" href="#the-art-of-withholding-in-the-social-media-era" title="Permalink to this heading">#</a></h3>
+<p>In an era of instant gratification, the deliberate withholding of content might seem counterintuitive. After all, social media platforms are designed for quick consumption and immediate responses. But this is precisely what makes drip-feeding so effective. By releasing content in small, controlled increments, creators tap into a primal aspect of human psychology: the desire for what is just out of reach. We are wired to seek closure and resolution, and drip-feeding plays on this by keeping the full story or product tantalizingly close but always slightly beyond our grasp.</p>
+<p>Take Melania Trump’s book promotion strategy, for example. By releasing narrated snippets of the book, she allows the audience to glimpse parts of the story, but not enough to fully understand its entirety. This keeps people coming back, eagerly awaiting the next installment. The book becomes a puzzle to be solved, with each new video or audio clip offering just enough information to sustain interest but not enough to satisfy it. This controlled scarcity of content turns the audience’s curiosity into anticipation.</p>
+<p>In the case of major brands or public figures, this strategy is particularly effective because it allows them to dominate the conversation for an extended period of time. Rather than releasing all content at once, drip-feeding ensures that their presence remains constant, creating a slow burn of engagement that keeps their audience invested. This is a technique frequently used by tech companies, movie studios, and musicians, who release teaser trailers, behind-the-scenes footage, and promotional interviews long before the actual product drops.</p>
+</section>
+<section id="drip-feeding-and-the-modern-day-cliffhanger">
+<h3>Drip-Feeding and the Modern-Day Cliffhanger<a class="headerlink" href="#drip-feeding-and-the-modern-day-cliffhanger" title="Permalink to this heading">#</a></h3>
+<p>What social media has added to the age-old tactic of drip-feeding is the immediacy of response. Unlike the serialized novels of the 19th century, where readers had to wait for the next physical issue to hit the stands, today’s audience can react, speculate, and engage with content in real-time. This adds an element of community to the experience, turning each drip-fed piece of content into a social event.</p>
+<p>In many ways, social media drip-feeding functions like the cliffhangers of modern television. Each post, tweet, or teaser clip leaves the audience in suspense, eagerly awaiting the next reveal. The slow, deliberate release of content builds a narrative arc that mirrors the episodic structure of TV shows. For instance, when Melania Trump releases an audio clip of her narrating a chapter from her book, she is engaging in the same kind of tension-building that a TV show does when it ends an episode with a shocking twist.</p>
+<p>The impact of this is amplified by the communal nature of social media. Fans and critics alike take to platforms like Twitter and Instagram to dissect each new piece of content, speculate about what’s coming next, and form their own theories. This sense of collective engagement not only heightens the anticipation but also gives the creator greater control over the narrative. By strategically timing the release of new content, they can guide the conversation and ensure that their project remains in the public eye for an extended period.</p>
+</section>
+<section id="conclusion-the-future-of-drip-feeding">
+<h3>Conclusion: The Future of Drip-Feeding<a class="headerlink" href="#conclusion-the-future-of-drip-feeding" title="Permalink to this heading">#</a></h3>
+<p>Drip-feeding has come a long way from its origins in 19th-century serialized novels, but the underlying psychology remains the same. Whether it’s Charles Dickens leaving his readers in suspense or Melania Trump releasing select excerpts of her book on social media, the goal is to build anticipation, maintain engagement, and control the narrative.</p>
+<p>In the digital age, drip-feeding has become an even more powerful tool, thanks to the immediacy of social media and the endless appetite for content. Public figures, brands, and creators have learned to leverage platforms like Twitter and Instagram to their advantage, releasing content in small doses to maximize engagement and sustain interest. The future of drip-feeding will likely see even more sophisticated uses of this technique, with creators finding new ways to build suspense and keep their audiences invested over longer periods of time.</p>
+<p>In the end, whether through novels, television, or social media, the drip-feed taps into a timeless aspect of human nature: the desire for more, and the thrill of waiting to see what comes next.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./act3/part3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="part3_1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Chapter 1</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="part3_3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Bibliography</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chess">Chess</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure">Structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#platonic">Platonic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#information">Information</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transcendental">Transcendental</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uberfrau">Überfrau</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nextoken">NexToken</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alexei">Alexei</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drip-feed">Drip-feed</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#drip-feeding-in-19th-century-european-literature">Drip-Feeding in 19th-Century European Literature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cliffhanger-in-modern-television">The Cliffhanger in Modern Television</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-psychology-of-drip-feeding-and-cliffhangers">The Psychology of Drip-Feeding and Cliffhangers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#drip-feeding-in-social-media-creating-anticipation-and-engagement">Drip-Feeding in Social Media: Creating Anticipation and Engagement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-art-of-withholding-in-the-social-media-era">The Art of Withholding in the Social Media Era</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#drip-feeding-and-the-modern-day-cliffhanger">Drip-Feeding and the Modern-Day Cliffhanger</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-the-future-of-drip-feeding">Conclusion: The Future of Drip-Feeding</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © 2025 ADM
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

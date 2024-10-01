@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortality Risk Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .input-method {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .input-method h2 {
+            margin-top: 0;
+        }
+        button, select {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        #dictation-result {
+            margin-top: 10px;
+            font-style: italic;
+        }
+        #mortality-risk-graph-container {
+            margin-top: 20px;
+        }
+        canvas {
+            width: 100% !important;
+            height: 400px !important;
+        }
+        #variable-options {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mortality Risk Calculator</h1>
+    
+    <!-- Voice Input Section -->
+    <div class="input-method">
+        <h2>Option 1: Voice Input</h2>
+        <button id="start-dictation">Start Dictation</button>
+        <div id="dictation-result"></div>
+    </div>
+
+    <!-- Manual Variable Selection Section -->
+    <div class="input-method">
+        <h2>Option 2: Select Variables</h2>
+        <div id="variable-options"></div>
+    </div>
+
+    <!-- Button to Calculate Risk -->
+    <button id="calculate-risk-button" disabled>Calculate Mortality Risk</button>
+
+    <!-- Graph Container -->
+    <div id="mortality-risk-graph-container">
+        <canvas id="mortality-risk-graph"></canvas>
+    </div>
+
+    <!-- Results Section -->
+    <!-- div id="mortality-risk-results" --></div>
+
+    <!-- Ensure the path is correct -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
